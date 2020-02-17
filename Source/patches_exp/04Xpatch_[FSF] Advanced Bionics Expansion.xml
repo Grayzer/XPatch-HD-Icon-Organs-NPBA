@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 51, 153)  (0.5, 0.8, 0.5)
+  Prostetic             (255, 153, 102)
+  Syntetic              (102, 255, 51)
+  Hydraulic             (102, 102, 153)
+  Bionic                (51, 153, 255)
+  Advanced Bionic       (0, 77, 153)
+  Archotech             (230, 77, 0)
+  Advanced Archotech    (230, 0, 0)
+-->
+
+<!-- [FSF] Advanced Bionics Expansion -->
+<!-- Bionic -->
+  <!-- Implant -->
+    <!--
+    +Joywire
+    +Painstopper
+    -->
+  <!-- AI Chip -->
+    <!--
+    +FSFAIChipColonist
+    +FSFAIChipMelee
+    +FSFAIChipShooting
+    +FSFAIChipGlobalSpeed
+    +FSFAIChipArt
+    +FSFAIChipConstruction
+    +FSFAIChipCooking
+    +FSFAIChipCrafting
+    +FSFAIChipEducation
+    +FSFAIChipMedical
+    +FSFAIChipMining
+    +FSFAIChipPlants
+    +FSFAIChipResearch
+    +FSFAIChipSocial
+    -->
+  <!-- Body Implant -->
+    <!--
+    +FSFImplantCombatModule
+    +FSFImplantHazardModule
+    +FSFImplantSkullArmor
+    +FSFImplantTorsoMovement
+    +FSFImplantAugmentedSkeleton
+    +FSFImplantSubdermalArmor
+    +FSFImplantSubdermalArmorMkII
+    -->
+<!-- Advanced Bionic -->
+  <!--
+  +FSFAdvBionicEye
+  +FSFAdvBionicArm
+  +FSFAdvBionicPowerArm
+  +FSFAdvBionicTaserArm
+  +FSFAdvBionicLeg
+  +FSFAdvBionicEar
+  +FSFAdvBionicJaw
+  +FSFAdvBionicSpine
+  +FSFAdvBionicHeart
+  +FSFAdvBionicLung
+  +FSFAdvBionicKidney
+  +FSFAdvBionicLiver
+  +FSFAdvBionicStomach
+  FSFAdvEfficientStomach
+  -->
+<!-- Archotech -->
+  <!-- AI Chip -->
+    <!--
+    +FSFArchotechAIChipGlobalSpeed
+    -->
+  <!-- Implant -->
+    <!--
+    +FSFArchotechImplantSubdermalArmor
+    -->
+  <!-- Body Part -->
+    <!--
+    +ArchotechEye
+    +ArchotechArm
+    +ArchotechLeg
+    +FSFArchotechPowerArm
+    +FSFArchotechEar
+    +FSFArchotechJaw
+    +FSFArchotechSpine
+    +FSFArchotechHeart
+    +FSFArchotechLung
+    +FSFArchotechKidney
+    +FSFArchotechLiver
+    +FSFArchotechStomach
+    -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>[FSF] Advanced Bionics Expansion</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "FSFAIChipImplantBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "FSFAIChipImplantBase"]</xpath>
+        <value>
+          <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0, 77, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "FSFBodyPartAdvBionicBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "FSFBodyPartAdvBionicBase"]</xpath>
+        <value>
+          <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0, 77, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "FSFBodyImplantBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "FSFBodyImplantBase"]</xpath>
+        <value>
+          <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0, 77, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName = "Joywire"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName = "Painstopper"]/graphicData</xpath>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[@Name = "FSFAdvImplantHediffBase"]/defaultLabelColor</xpath>
+        <value>
+          <defaultLabelColor>(0, 77, 153)</defaultLabelColor>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[@Name = "FSFAddedBodyPartAdvBionic"]/defaultLabelColor</xpath>
+        <value>
+          <defaultLabelColor>(0, 77, 153)</defaultLabelColor>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[@Name = "FSFAddedBodyPartArchotech"]/defaultLabelColor</xpath>
+        <value>
+          <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[@Name = "FSFArchotechImplantHediffBase"]/defaultLabelColor</xpath>
+        <value>
+          <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName = "Joywire"]/defaultLabelColor</xpath>
+        <value>
+          <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName = "Painstopper"]/defaultLabelColor</xpath>
+        <value>
+          <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+        </value>
+      </li>
+<!-- Bionic -->
+<!-- Implant -->
+<!-- Joywire -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Joywire"]</xpath>
+        <value>
+          <graphicData>
+            <texPath>Things/Item/Health/HealthItemJoywire</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(51, 153, 255)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+<!-- Painstopper -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "Painstopper"]</xpath>
+        <value>
+          <graphicData>
+            <texPath>Things/Item/Health/HealthItemPainstopper</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(51, 153, 255)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+<!-- AI Chip -->
+<!-- FSFAIChipColonist -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipColonist"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipMelee -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipMelee"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipShooting -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipShooting"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipGlobalSpeed -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipGlobalSpeed"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipArt -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipArt"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipConstruction -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipConstruction"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipCooking -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipCooking"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipCrafting -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipCrafting"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipEducation -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipEducation"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipMedical -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipMedical"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipMining -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipMining"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipPlants -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipPlants"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipResearch -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipResearch"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAIChipSocial -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFAIChipSocial"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- Body Implant -->
+<!-- FSFImplantCombatModule -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantCombatModule"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemCombatModule</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFImplantHazardModule -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantHazardModule"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemHazardModule</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFImplantSkullArmor -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantSkullArmor"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSkullArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFImplantTorsoMovement -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantTorsoMovement"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemTorsoMovement</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFImplantAugmentedSkeleton -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantAugmentedSkeleton"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemAugmentedSkeleton</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFImplantSubdermalArmor -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantSubdermalArmor"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSubdermalArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFImplantSubdermalArmorMkII -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "FSFImplantSubdermalArmorMkII"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSubdermalArmorMkII</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </li>
+<!-- Advanced Bionic -->
+<!-- FSFAdvBionicEye -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicEye"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemEye</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicArm -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemArm</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicPowerArm -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicPowerArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemPowerArm</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicTaserArm -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicTaserArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemTaserArm</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicLeg -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicLeg"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLeg</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicEar -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicEar"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemEar</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicJaw -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicJaw"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemJaw</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicSpine -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicSpine"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSpine</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicHeart -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicHeart"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicLung -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLung</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicKidney -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemKidney</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicLiver -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLiver</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFAdvBionicStomach -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFAdvBionicStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemStomach</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- Archotech -->
+<!-- AI Chip -->
+<!-- FSFArchotechAIChipGlobalSpeed -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechAIChipGlobalSpeed"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- Implant -->
+<!-- FSFArchotechImplantSubdermalArmor -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechImplantSubdermalArmor"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSubdermalArmor</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- Body Part -->
+<!-- ArchotechEye -->
+<!--        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "ArchotechEye"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemEye</texPath>
+            </graphicData>
+          </value>
+        </li>-->
+<!-- ArchotechArm -->
+<!--        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "ArchotechArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemArm</texPath>
+            </graphicData>
+          </value>
+        </li>-->
+<!-- ArchotechLeg -->
+<!--        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "ArchotechLeg"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLeg</texPath>
+            </graphicData>
+          </value>
+        </li>-->
+<!-- FSFArchotechPowerArm -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechPowerArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemPowerArm</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechEar -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechEar"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemEar</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechJaw -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechJaw"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemJaw</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechSpine -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechSpine"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSpine</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechHeart -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechHeart"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechLung -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLung</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechKidney -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemKidney</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechLiver -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLiver</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechStomach -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemStomach</texPath>
+            </graphicData>
+          </value>
+        </li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>

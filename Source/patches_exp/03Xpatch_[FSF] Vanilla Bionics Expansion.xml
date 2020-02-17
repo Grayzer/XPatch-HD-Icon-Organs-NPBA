@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 51, 153)  (0.5, 0.8, 0.5)
+  Prostetic             (255, 153, 102)
+  Syntetic              (102, 255, 51)
+  Hydraulic             (102, 102, 153)
+  Bionic                (51, 153, 255)
+  Advanced Bionic       (0, 77, 153)
+  Archotech             (230, 77, 0)
+  Advanced Archotech    (230, 0, 0)
+-->
+
+<!-- [FSF] Vanilla Bionics Expansion -->
+<!-- Prostetic -->
+  <!--
+  +FSFArtificialNose
+  +FSFProstheticEye
+  +FSFProstheticHand
+  +FSFProstheticSpine
+  +FSFSimpleProstheticLung
+  +FSFSimpleProstheticKidney
+  +FSFSimpleProstheticLiver
+  +FSFSimpleProstheticStomach
+  -->
+<!-- Bionic -->
+  <!--
+  +FSFBionicPowerArm
+  +FSFBionicJaw
+  +FSFBionicLung
+  +FSFBionicKidney
+  +FSFBionicLiver
+  -->
+<!-- Archotech -->
+  <!--
+  +FSFArchotechEar
+  +FSFArchotechJaw
+  +FSFArchotechSpine
+  +FSFArchotechHeart
+  +FSFArchotechLung
+  +FSFArchotechKidney
+  +FSFArchotechLiver
+  +FSFArchotechStomach
+  -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>[FSF] Vanilla Bionics Expansion</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- Prostetic -->
+<!-- FSFArtificialNose -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArtificialNose"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemNose</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFArtificialNose"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+
+<!-- FSFProstheticEye -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFProstheticEye"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemEye</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFProstheticEye"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- FSFProstheticHand -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFProstheticHand"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemHand</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFProstheticHand"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- FSFProstheticSpine -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFProstheticSpine"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSpine</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFProstheticSpine"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- FSFSimpleProstheticLung -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFSimpleProstheticLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLung</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFSimpleProstheticLung"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- FSFSimpleProstheticKidney -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFSimpleProstheticKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemKidney</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFSimpleProstheticKidney"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- FSFSimpleProstheticLiver -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFSimpleProstheticLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLiver</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFSimpleProstheticLiver"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- FSFSimpleProstheticStomach -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFSimpleProstheticStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemStomach</texPath>
+            </graphicData>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HediffDef[defName = "FSFSimpleProstheticStomach"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+          </value>
+        </li>
+<!-- Bionic -->
+<!-- FSFBionicPowerArm -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFBionicPowerArm"]/graphicData/</xpath>
+          <value>
+              <texPath>Things/Item/Health/HealthItemArm</texPath>
+          </value>
+        </li>
+<!-- FSFBionicJaw -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFBionicJaw"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemJaw</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFBionicLung -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFBionicLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLung</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFBionicKidney -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFBionicKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemKidney</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFBionicLiver -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFBionicLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLiver</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- Archotech -->
+<!-- FSFArchotechEar -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechEar"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemEar</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechJaw -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechJaw"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemJaw</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechSpine -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechSpine"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemSpine</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechHeart -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechHeart"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechLung -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechKidney -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemKidney</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechLiver -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemLiver</texPath>
+            </graphicData>
+          </value>
+        </li>
+<!-- FSFArchotechStomach -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "FSFArchotechStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemStomach</texPath>
+            </graphicData>
+          </value>
+        </li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>

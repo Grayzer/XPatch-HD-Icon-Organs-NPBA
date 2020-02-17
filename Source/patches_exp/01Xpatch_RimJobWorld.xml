@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 51, 153)  (0.5, 0.8, 0.5)
+  Prostetic             (255, 153, 102)
+  Syntetic              (102, 255, 51)
+  Hydraulic             (102, 102, 153)
+  Bionic                (51, 153, 255)
+  Advanced Bionic       (0, 77, 153)
+  Archotech             (230, 77, 0)
+  Advanced Archotech    (230, 0, 0)
+-->
+
+<!-- RimJobWorld -->
+<!-- Animal -->
+  <!--
+  +HorsePenis
+  +HorseVagina
+  +CatPenis
+  +CatVagina
+  +DogPenis
+  +DogVagina
+  +DragonPenis
+  +DragonVagina
+  +RaccoonPenis
+  +Hemipenis
+  +CrocodilianPenis
+  +NarrowVagina
+  +NeedlePenis
+  +RodentVagina
+  +RodentPenis
+  +CloacalPenis
+  +CloacalVagina
+  +CloacalAnus
+  +Udder
+  -->
+<!-- Demon -->
+  <!--
+  +DemonTentaclePenis
+  +DemonPenis
+  +DemonVagina
+  +DemonAnus
+  -->
+<!-- Human -->
+  <!--
+  +Penis
+  +MicroPenis
+  +SmallPenis
+  +BigPenis
+  +HugePenis
+  +Vagina
+  +MicroVagina
+  +TightVagina
+  +LooseVagina
+  +GapingVagina
+  +Breasts
+  +FlatBreasts
+  +SmallBreasts
+  +LargeBreasts
+  +HugeBreasts
+  +Anus
+  +MicroAnus
+  +TightAnus
+  +LooseAnus
+  +GapingAnus
+  +FeaturelessChest
+  -->
+<!-- Insect -->
+  <!--
+  +OvipositorM
+  +OvipositorF
+  +InsectAnus
+  -->
+<!-- Slime -->
+  <!--
+  +SlimeGlob
+  -->
+<!-- Implant -->
+  <!-- Prostetic -->
+    <!--
+    +PegDick
+    -->
+  <!-- Hydraulic -->
+    <!--
+    +HydraulicPenis
+    +HydraulicVagina
+    +HydraulicBreasts
+    +HydraulicAnus
+    -->
+  <!-- Bionic -->
+    <!--
+    +BionicPenis
+    +BionicVagina
+    +BionicBreasts
+    +BionicAnus
+    -->
+  <!-- Archotech -->
+    <!--
+    +ArchotechPenis
+    +ArchotechVagina
+    +ArchotechBreasts
+    +ArchotechAnus
+    -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>RimJobWorld</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- Remove default graph -->
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseGenMale"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseGenFemale"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseAnus"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseBreast"]/graphicData</xpath>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartArtificialBaseGenMale"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartArtificialBaseGenFemale"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartArtificialBaseAnus"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartArtificialBaseBreast"]/graphicData</xpath>
+      </li>
+
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/HediffDef[@Name = "NaturalPrivatePartBase"]/defaultLabelColor</xpath>
+      </li>
+<!--
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/HediffDef[@Name = "ArtificialPrivatePartBase"]/defaultLabelColor</xpath>
+      </li>
+-->
+<!-- Add new graph (IconColor and HediffDef) -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseGenMale"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenMale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseGenFemale"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseAnus"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemAnus</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "rjw_BodyPartNaturalBaseBreast"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemBreast</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[@Name = "NaturalPrivatePartBase"]</xpath>
+        <value>
+          <defaultLabelColor>(0.5, 0.8, 0.5)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "DemonTentaclePenis"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemTentacles</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0.5, 0.8, 0.5)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "OvipositorM"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemOvipositor</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "OvipositorF"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemOvipositor</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "SlimeGlob"]/graphicData</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemSlimeGlob</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(0.5, 0.8, 0.5)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "PegDick"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenMale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(255, 153, 102)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "PegDick"]</xpath>
+        <value>
+          <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "HydraulicPenis"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenMale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(102, 102, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "HydraulicPenis"]</xpath>
+        <value>
+          <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "HydraulicVagina"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(102, 102, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "HydraulicVagina"]</xpath>
+        <value>
+          <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "HydraulicBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemBreast</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(102, 102, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "HydraulicBreasts"]</xpath>
+        <value>
+          <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "HydraulicAnus"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemAnus</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(102, 102, 153)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "HydraulicAnus"]</xpath>
+        <value>
+          <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "BionicPenis"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenMale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(51, 153, 255)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "BionicPenis"]</xpath>
+        <value>
+          <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "BionicVagina"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(51, 153, 255)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "BionicVagina"]</xpath>
+        <value>
+          <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "BionicBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemBreast</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(51, 153, 255)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "BionicBreasts"]</xpath>
+        <value>
+          <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "BionicAnus"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemAnus</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(51, 153, 255)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "BionicAnus"]</xpath>
+        <value>
+          <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ArchotechPenis"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenMale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(230, 77, 0)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "ArchotechPenis"]</xpath>
+        <value>
+          <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ArchotechVagina"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(230, 77, 0)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "ArchotechVagina"]</xpath>
+        <value>
+          <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ArchotechBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemBreast</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(230, 77, 0)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "ArchotechBreasts"]</xpath>
+        <value>
+          <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ArchotechAnus"]</xpath>
+        <value>
+          <graphicData Inherit="False">
+            <texPath>Things/Item/Health/HealthItemAnus</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(230, 77, 0)</color>
+            <drawSize>1.00</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName = "ArchotechAnus"]</xpath>
+        <value>
+          <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+        </value>
+      </li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>
