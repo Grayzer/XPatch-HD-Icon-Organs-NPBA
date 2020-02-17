@@ -63,7 +63,7 @@
   +FSFAdvBionicKidney
   +FSFAdvBionicLiver
   +FSFAdvBionicStomach
-  FSFAdvEfficientStomach
+  +FSFAdvEfficientStomach
   -->
 <!-- Archotech -->
   <!-- AI Chip -->
@@ -185,7 +185,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipColonist"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipColonist</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -195,7 +195,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipColonist"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipColonist</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -224,7 +224,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipMelee"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipMelee</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -234,7 +234,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipMelee"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipMelee</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -263,7 +263,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipShooting"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipShooting</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -273,7 +273,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipShooting"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipShooting</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -302,7 +302,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipGlobalSpeed"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipGlobalSpeed</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -312,7 +312,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipGlobalSpeed"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipGlobalSpeed</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -341,7 +341,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipArt"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipArt</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -351,7 +351,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipArt"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipArt</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -380,7 +380,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipConstruction"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipConstruction</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -390,7 +390,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipConstruction"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipConstruction</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -419,7 +419,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipCooking"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipCooking</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -429,7 +429,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipCooking"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipCooking</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -458,7 +458,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipCrafting"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipCrafting</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -468,7 +468,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipCrafting"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipCrafting</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -497,7 +497,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipEducation"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipEducation</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -507,7 +507,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipEducation"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipEducation</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -536,7 +536,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipMedical"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipMedical</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -546,7 +546,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipMedical"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipMedical</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -575,7 +575,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipMining"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipMining</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -585,7 +585,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipMining"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipMining</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -614,7 +614,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipPlants"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipPlants</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -624,7 +624,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipPlants"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipPlants</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -653,7 +653,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipResearch"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipResearch</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -663,7 +663,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipResearch"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipResearch</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -692,7 +692,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipSocial"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipSocial</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -702,7 +702,7 @@
           <xpath>*/ThingDef[defName = "FSFAIChipSocial"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipSocial</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 153, 255)</color>
             </graphicData>
@@ -1506,6 +1506,45 @@
           </value>
         </nomatch>
       </li>
+<!-- FSFAdvEfficientStomach -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "FSFAdvEfficientStomach"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "FSFAdvEfficientStomach"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemAdvEfficientStomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "FSFAdvEfficientStomach"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemAdvEfficientStomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 77, 153)</color>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "FSFAdvEfficientStomach"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "FSFAdvEfficientStomach"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 77, 153)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "FSFAdvEfficientStomach"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 77, 153)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
 <!-- Archotech -->
 <!-- AI Chip -->
 <!-- FSFArchotechAIChipGlobalSpeed -->
@@ -1515,7 +1554,7 @@
           <xpath>*/ThingDef[defName = "FSFArchotechAIChipGlobalSpeed"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipGlobalSpeed</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 153, 102)</color>
             </graphicData>
@@ -1525,7 +1564,7 @@
           <xpath>*/ThingDef[defName = "FSFArchotechAIChipGlobalSpeed"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMicroChip</texPath>
+              <texPath>Things/Item/Health/HealthItemChipGlobalSpeed</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 153, 102)</color>
             </graphicData>
