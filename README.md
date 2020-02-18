@@ -1,6 +1,6 @@
 # XPatch HD Icon Organs NPBA
  [XPatch] HD Icon Organs Natural Prostetic Bionic Archtech
- 
+<hr />
 Color of Tech levels:</br>
  - Nature                (255, 255, 255)</br>
  - Prostetic             (210, 166, 121)</br>
