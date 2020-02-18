@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	 <name>[XPatch] HD Icon Organs NPBA</name>
-    <supportedVersions><li>1.0</li></supportedVersions>
+    <supportedVersions>
+			<li>1.0</li>
+			<li>1.1</li>
+		</supportedVersions>
     <author>Mungus</author>
     <url>https://github.com/Grayzer/XPatch-HD-Icon-Organs-NPBA</url>
     <description>

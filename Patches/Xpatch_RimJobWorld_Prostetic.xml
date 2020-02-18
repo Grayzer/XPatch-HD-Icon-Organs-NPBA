@@ -3,15 +3,15 @@
 
 <!-- ===xpath=== -->
 <!-- Color Legend -->
-<!--                    IconColor                       HediffColor
-  Natural               <color>(255, 51, 153)</color>   <defaultLabelColor>(255, 51, 153)</defaultLabelColor>
-  Prostetic             <color>(255, 153, 102)</color>  <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
-  Syntetic              <color>(102, 255, 51)</color>   <defaultLabelColor>(102, 255, 51)</defaultLabelColor>
-  Hydraulic             <color>(102, 102, 153)</color>  <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
-  Bionic                <color>(51, 153, 255)</color>   <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
-  Advanced Bionic       <color>(0, 77, 153)</color>     <defaultLabelColor>(0, 77, 153)</defaultLabelColor>
-  Archotech             <color>(255, 153, 102)</color>  <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
-  Advanced Archotech    <color>(230, 77, 0)</color>     <defaultLabelColor>(230, 77, 0)</defaultLabelColor>
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
 -->
 
 <!-- RimJobWorld -->
@@ -60,7 +60,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(210, 166, 121)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -70,7 +71,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(210, 166, 121)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -80,13 +82,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "PegDick"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "PegDick"]</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -100,7 +102,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -110,7 +113,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -120,13 +124,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "HydraulicPenis"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "HydraulicPenis"]</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -139,7 +143,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -149,7 +154,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -159,13 +165,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "HydraulicVagina"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "HydraulicVagina"]</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -178,7 +184,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemBreast</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -188,7 +195,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemBreast</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -198,13 +206,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "HydraulicBreasts"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "HydraulicBreasts"]</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -217,7 +225,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemAnus</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -227,7 +236,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemAnus</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(102, 102, 153)</color>
+              <color>(51, 133, 255)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -237,13 +247,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "HydraulicAnus"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "HydraulicAnus"]</xpath>
           <value>
-            <defaultLabelColor>(102, 102, 153)</defaultLabelColor>
+            <defaultLabelColor>(51, 133, 255)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -257,7 +267,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -267,7 +278,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -277,13 +289,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "BionicPenis"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "BionicPenis"]</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -296,7 +308,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -306,7 +319,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -316,13 +330,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "BionicVagina"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "BionicVagina"]</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -335,7 +349,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemAnus</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -345,7 +360,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemAnus</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -355,13 +371,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "BionicAnus"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "BionicAnus"]</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -374,7 +390,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemBreast</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -384,7 +401,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemBreast</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(51, 153, 255)</color>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -394,13 +412,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "BionicBreasts"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "BionicBreasts"]</xpath>
           <value>
-            <defaultLabelColor>(51, 153, 255)</defaultLabelColor>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -414,7 +432,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -424,7 +443,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenMale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -434,13 +454,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "ArchotechPenis"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "ArchotechPenis"]</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -453,7 +473,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -463,7 +484,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemGenFemale</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -473,13 +495,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "ArchotechVagina"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "ArchotechVagina"]</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -492,7 +514,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemBreast</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -502,7 +525,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemBreast</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -512,13 +536,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "ArchotechBreasts"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "ArchotechBreasts"]</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
@@ -531,7 +555,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemAnus</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </match>
@@ -541,7 +566,8 @@
             <graphicData Inherit="False">
               <texPath>Things/Item/Health/HealthItemAnus</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 153, 102)</color>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
             </graphicData>
           </value>
         </nomatch>
@@ -551,13 +577,13 @@
         <match Class="PatchOperationReplace">
           <xpath>*/HediffDef[defName = "ArchotechAnus"]/defaultLabelColor</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>*/HediffDef[defName = "ArchotechAnus"]</xpath>
           <value>
-            <defaultLabelColor>(255, 153, 102)</defaultLabelColor>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
