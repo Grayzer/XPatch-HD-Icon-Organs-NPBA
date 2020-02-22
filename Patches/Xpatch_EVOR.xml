@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- EvolvedOrgansRedux -->
+<!--
+- Abdomen
+EVOR_Item_Abd_ThirdLung       extra nano-filter lung
+EVOR_Item_Abd_SecondHeart     auxilary heart
+EVOR_Item_Abd_Combat          combat serum gland
+EVOR_Item_Abd_Hormone         hormone regulator
+EVOR_Item_Abd_Lymph           lymphatic proliferator
+EVOR_Item_Abd_Cultivate       microbiome cultivator
+- Arm
+EVOR_Item_NormalArm           extradextrous arm
+EVOR_Item_BoneSaber           ossified bone saber
+EVOR_Item_HighPincer          high pressure pincer
+EVOR_Item_SonicMace           sonic impact mace
+EVOR_Item_PlatedLimb          tri-plated limb
+EVOR_Item_ShockTentacle       electroshock tentacle
+EVOR_Item_RendingClaw         rending claws
+- Back
+EVOR_Item_Back_Wing           feathered wings
+EVOR_Item_Back_Hand           tentacle cluster
+EVOR_Item_Back_Muscle         musculature braces
+- Brain
+EVOR_Item_Brain_Rest          hibernation module
+EVOR_Item_Brain_Physics       physics processing cortex
+EVOR_Item_Brain_Diplo         interbeing relations cortex
+EVOR_Item_Brain_Hyper         neural hyperthreader
+EVOR_Item_Brain_Logic         logical reasoning cortex
+EVOR_Item_Brain_Bio           biological processing cortex
+EVOR_Item_Brain_Chem          chemical processing cortex
+EVOR_Item_Brain_Nails         butcher's nails
+- Head
+EVOR_Item_Skull_Shielding     interference shielding
+EVOR_Item_Skull_Plating       cranial plating
+- JawNeck
+EVOR_Item_Jaw_Distend         distendable jaw
+EVOR_Item_Jaw_Venom           venomous fangs
+- Leg
+EVOR_Item_Leg_Normal          reinforced leg
+EVOR_Item_Leg_Hand            grasping leg
+- OtherOrgan
+EVOR_Item_Eye                 multispectrum eye
+EVOR_Item_Nose                micro-analyzer nose
+EVOR_Item_Nose_Pheromones     pheromone releaser nose
+EVOR_Item_Ear                 multifrequency ear
+EVOR_Item_Spine               neuro-accelerated spine
+- PrimaryOrgan
+EVOR_Item_Heart               triwoven primary heart
+EVOR_Item_Kidney              triple filter pass kidney
+EVOR_Item_Lung                nano-alveoli lung
+EVOR_Item_Stomach             multichamber stomach
+EVOR_Item_Liver               quadlobe liver
+- SkeletalParts
+EVOR_Item_Skin_Plating        multilayered dermal plating
+EVOR_Item_Skin_Flame          flame retardant skin
+EVOR_Item_Skin_Insulation     variable insulation skin
+EVOR_Item_Ribcage             calcium-alloy ribcage
+- Tail
+EVOR_Item_Tail_Blade          serrated stinger tail
+EVOR_Item_Tail_Hand           manipulator tail
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>EvolvedOrgansRedux</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- EVOR -->
+<!--
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+-->
+   </operations>
+ </match>
+</Operation>
+</Patch>
