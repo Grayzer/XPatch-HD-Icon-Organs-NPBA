@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- Medical System Expansion
+- Nature
+Heart
+Lung
+Kidney
+Liver
+Brain
+Stomach
+Leg
+Foot
+Toe
+Shoulder
+Arm
+Hand
+Finger
+Eye
+Ear
+Nose
+Jaw
+- Prostetic
+PegLeg
+WoodenFoot
+Denture
+SimpleProstheticLeg
+SimpleProstheticArm
+SimpleProstheticHeart
+CochlearImplant
+SimpleProstheticFoot
+SimpleProstheticToe
+SimpleProstheticHand
+SimpleProstheticFinger
+SimpleProstheticJaw
+SimpleProstheticClavicle
+SimpleProstheticSternum
+SimpleProstheticRib
+SimpleProstheticPelvis
+SimpleProstheticHumerus
+SimpleProstheticRadius
+SimpleProstheticFemur
+SimpleProstheticTibia
+- Bionic
+BionicEye
+BionicArm
+BionicLeg
+BionicSpine
+BionicHeart
+BionicStomach
+BionicEar
+PowerClaw
+BionicLung
+BionicKidney
+BionicLiver
+BionicFoot
+BionicToe
+BionicShoulder
+BionicHand
+BionicFinger
+BionicJaw
+BionicClavicle
+BionicSternum
+BionicRib
+BionicPelvis
+BionicHumerus
+BionicRadius
+BionicFemur
+BionicTibia
+- Implant
+Joywire
+Painstopper
+MSE_EndoskeletonStimulator
+MSE_MuscleStimulator
+MSE_BuilderAI
+MSE_FarmerAI
+MSE_DoctorAI
+MSE_MinerAI
+MSE_DiplomatAI
+MSE_TamerAI
+MSE_ChefAI
+MSE_HunterAI
+MSE_BasicLaborAI
+MSE_AppetiteSuppressant
+- Module
+MSE_BionicClavicleModule
+MSE_BionicArmModule
+MSE_BionicHumerusModule
+MSE_BionicRadiusModule
+MSE_BionicHandModule
+MSE_BionicFingerModule
+MSE_BionicFemurModule
+MSE_BionicTibiaModule
+MSE_BionicFootModule
+MSE_BionicToeModule
+- Advanced Bionic
+AntitoxinKidney
+MedicalLiver
+EnergizedLiver
+MSE_PowerBlade
+PowerArm
+BreathingSupportRib
+RelaxationRib
+ColdRegulatorRib
+HeatRegulatorRib
+MSE_RangedPlatformModule
+MSE_MeleePlatformModule
+MSE_PowerArmModule
+MSE_PowerClawModule
+MSE_AdamantiumCoatedBoneModule
+- Archotech
+ArchotechEye
+ArchotechArm
+ArchotechLeg
+ArchotechHeart
+ArchotechStomach
+ArchotechLung
+ArchotechKidney
+ArchotechLiver
+ArchotechEar
+ArchotechFoot
+ArchotechToe
+ArchotechShoulder
+ArchotechHand
+ArchotechFinger
+ArchotechJaw
+ArchotechSpine
+ArchotechClavicle
+ArchotechSternum
+ArchotechRib
+ArchotechPelvis
+ArchotechHumerus
+ArchotechRadius
+ArchotechFemur
+ArchotechTibia
+- Implant
+MSE_AdvancedEndoskeletonStimulator
+MSE_AdvancedMuscleStimulator
+AdvancedJoywire
+AdvancedPainstopper
+MSE_AdvancedBuilderAI
+MSE_AdvancedFarmerAI
+MSE_AdvancedDoctorAI
+MSE_AdvancedMinerAI
+MSE_AdvancedDiplomatAI
+MSE_AdvancedTamerAI
+MSE_AdvancedChefAI
+MSE_AdvancedHunterAI
+MSE_AdvancedLaborAI
+MSE_AdvancedAppetiteSuppressant
+- Module
+MSE_ArchotechClavicleModule
+MSE_ArchotechArmModule
+MSE_ArchotechHumerusModule
+MSE_ArchotechRadiusModule
+MSE_ArchotechHandModule
+MSE_ArchotechFingerModule
+MSE_ArchotechFemurModule
+MSE_ArchotechTibiaModule
+MSE_ArchotechFootModule
+MSE_ArchotechToeModule
+- Advanced Archotech
+AdvancedAntitoxinKidney
+AdvancedMedicalLiver
+AdvancedEnergizedLiver
+MSE_AdvancedPowerBlade
+AdvancedPowerArm
+AdvancedPowerClaw
+AdvancedBreathingSupportRib
+AdvancedRelaxationRib
+AdvancedColdRegulatorRib
+AdvancedHeatRegulatorRib
+MSE_AdvancedRangedPlatformModule
+MSE_AdvancedMeleePlatformModule
+MSE_AdvancedPowerArmModule
+MSE_AdvancedPowerClawModule
+MSE_AdamantiumBoneModule
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Medical System Expansion</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- MSE -->
+<!--
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "MSE"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "MSE"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "MSE"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "MSE"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "MSE"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "MSE"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+-->
+   </operations>
+ </match>
+</Operation>
+</Patch>
