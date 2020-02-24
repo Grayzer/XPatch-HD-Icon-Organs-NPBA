@@ -54,7 +54,7 @@
           <xpath>*/ThingDef[defName = "Heart"]</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+              <texPath>Things/Item/Health/Heart</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 255, 255)</color>
               <drawSize>1.00</drawSize>
@@ -66,7 +66,7 @@
           <xpath>Defs/ThingDef[defName = "Lung"]</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/HealthItemLung</texPath>
+              <texPath>Things/Item/Health/Lung</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 255, 255)</color>
               <drawSize>1.00</drawSize>
@@ -78,7 +78,7 @@
           <xpath>*/ThingDef[defName = "Kidney"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemKidney</texPath>
+              <texPath>Things/Item/Health/Kidney</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 255, 255)</color>
               <drawSize>1.00</drawSize>
@@ -90,7 +90,7 @@
           <xpath>*/ThingDef[defName = "Liver"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemLiver</texPath>
+              <texPath>Things/Item/Health/Liver</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 255, 255)</color>
               <drawSize>1.00</drawSize>
@@ -103,7 +103,7 @@
           <xpath>*/ThingDef[defName = "SimpleProstheticLeg"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemLeg</texPath>
+              <texPath>Things/Item/Health/Leg</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(210, 166, 121)</color>
               <drawSize>1.00</drawSize>
@@ -121,7 +121,7 @@
           <xpath>*/ThingDef[defName = "SimpleProstheticArm"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemArm</texPath>
+              <texPath>Things/Item/Health/Arm</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(210, 166, 121)</color>
               <drawSize>1.00</drawSize>
@@ -139,7 +139,7 @@
           <xpath>*/ThingDef[defName = "SimpleProstheticHeart"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+              <texPath>Things/Item/Health/Heart</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(210, 166, 121)</color>
               <drawSize>1.00</drawSize>
@@ -157,7 +157,7 @@
           <xpath>*/ThingDef[defName = "CochlearImplant"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemCochlear</texPath>
+              <texPath>Things/Item/Health/Cochlear</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(210, 166, 121)</color>
               <drawSize>1.00</drawSize>
@@ -176,7 +176,7 @@
           <xpath>*/ThingDef[defName = "BionicEye"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemEye</texPath>
+              <texPath>Things/Item/Health/Eye</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -194,7 +194,7 @@
           <xpath>*/ThingDef[defName = "BionicArm"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemArm</texPath>
+              <texPath>Things/Item/Health/Arm</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -212,7 +212,7 @@
           <xpath>*/ThingDef[defName = "BionicLeg"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemLeg</texPath>
+              <texPath>Things/Item/Health/Leg</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -230,7 +230,7 @@
           <xpath>*/ThingDef[defName = "BionicSpine"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemSpine</texPath>
+              <texPath>Things/Item/Health/Spine</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -248,7 +248,7 @@
           <xpath>*/ThingDef[defName = "BionicHeart"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemHeart</texPath>
+              <texPath>Things/Item/Health/Heart</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -266,7 +266,7 @@
           <xpath>*/ThingDef[defName = "BionicStomach"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemStomach</texPath>
+              <texPath>Things/Item/Health/Stomach</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -284,7 +284,7 @@
           <xpath>*/ThingDef[defName = "BionicEar"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemEar</texPath>
+              <texPath>Things/Item/Health/Ear</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -298,11 +298,11 @@
           </value>
         </Operation>
 <!-- PowerClaw -->
-        <Operation Class="PatchOperationReplace">
-          <xpath>*/ThingDef[defName = "PowerClaw"]/graphicData</xpath>
+        <Operation Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "PowerClaw"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemClaw</texPath>
+              <texPath>Things/Item/Health/Claw</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(51, 255, 173)</color>
               <drawSize>1.00</drawSize>
@@ -321,7 +321,7 @@
           <xpath>*/ThingDef[defName = "ArchotechEye"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemEye</texPath>
+              <texPath>Things/Item/Health/Eye</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 204, 0)</color>
               <drawSize>1.00</drawSize>
@@ -339,7 +339,7 @@
           <xpath>*/ThingDef[defName = "ArchotechArm"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemArm</texPath>
+              <texPath>Things/Item/Health/Arm</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 204, 0)</color>
               <drawSize>1.00</drawSize>
@@ -357,7 +357,7 @@
           <xpath>*/ThingDef[defName = "ArchotechLeg"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemLeg</texPath>
+              <texPath>Things/Item/Health/Leg</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 204, 0)</color>
               <drawSize>1.00</drawSize>

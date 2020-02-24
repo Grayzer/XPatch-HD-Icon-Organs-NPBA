@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	 <name>[XPatch] HD Icon Organs NPBA</name>
-    <supportedVersions>
-			<li>1.0</li>
-			<li>1.1</li>
-		</supportedVersions>
-    <author>Mungus</author>
-    <url>https://github.com/Grayzer/XPatch-HD-Icon-Organs-NPBA</url>
-    <description>
+	<packageId>Mungus.XPath.HDIconOrgansNPBA</packageId>
+	<name>[XPatch] HD Icon Organs NPBA</name>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<author>Mungus</author>
+	<url>https://github.com/Grayzer/XPatch-HD-Icon-Organs-NPBA</url>
+	<description>
       Load mod at bottom of mod list:
       Core
       HugsLib
       ++Mods
       [XPatch] HD Icon Organs NPBA
-    </description>
+		</description>
 
 </ModMetaData>

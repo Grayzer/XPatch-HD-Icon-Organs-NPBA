@@ -17,62 +17,62 @@
 <!-- EvolvedOrgansRedux -->
 <!--
 - Abdomen
-EVOR_Item_Abd_ThirdLung       extra nano-filter lung
-EVOR_Item_Abd_SecondHeart     auxilary heart
-EVOR_Item_Abd_Combat          combat serum gland
-EVOR_Item_Abd_Hormone         hormone regulator
-EVOR_Item_Abd_Lymph           lymphatic proliferator
-EVOR_Item_Abd_Cultivate       microbiome cultivator
+EVOR_Item_Abd_ThirdLung
+EVOR_Item_Abd_SecondHeart
+EVOR_Item_Abd_Combat
+EVOR_Item_Abd_Hormone
+EVOR_Item_Abd_Lymph
+EVOR_Item_Abd_Cultivate
 - Arm
-EVOR_Item_NormalArm           extradextrous arm
-EVOR_Item_BoneSaber           ossified bone saber
-EVOR_Item_HighPincer          high pressure pincer
-EVOR_Item_SonicMace           sonic impact mace
-EVOR_Item_PlatedLimb          tri-plated limb
-EVOR_Item_ShockTentacle       electroshock tentacle
-EVOR_Item_RendingClaw         rending claws
+EVOR_Item_NormalArm
+EVOR_Item_BoneSaber
+EVOR_Item_HighPincer
+EVOR_Item_SonicMace
+EVOR_Item_PlatedLimb
+EVOR_Item_ShockTentacle
+EVOR_Item_RendingClaw
 - Back
-EVOR_Item_Back_Wing           feathered wings
-EVOR_Item_Back_Hand           tentacle cluster
-EVOR_Item_Back_Muscle         musculature braces
+EVOR_Item_Back_Wing
+EVOR_Item_Back_Hand
+EVOR_Item_Back_Muscle
 - Brain
-EVOR_Item_Brain_Rest          hibernation module
-EVOR_Item_Brain_Physics       physics processing cortex
-EVOR_Item_Brain_Diplo         interbeing relations cortex
-EVOR_Item_Brain_Hyper         neural hyperthreader
-EVOR_Item_Brain_Logic         logical reasoning cortex
-EVOR_Item_Brain_Bio           biological processing cortex
-EVOR_Item_Brain_Chem          chemical processing cortex
-EVOR_Item_Brain_Nails         butcher's nails
+EVOR_Item_Brain_Rest
+EVOR_Item_Brain_Physics
+EVOR_Item_Brain_Diplo
+EVOR_Item_Brain_Hyper
+EVOR_Item_Brain_Logic
+EVOR_Item_Brain_Bio
+EVOR_Item_Brain_Chem
+EVOR_Item_Brain_Nails
 - Head
-EVOR_Item_Skull_Shielding     interference shielding
-EVOR_Item_Skull_Plating       cranial plating
+EVOR_Item_Skull_Shielding
+EVOR_Item_Skull_Plating
 - JawNeck
-EVOR_Item_Jaw_Distend         distendable jaw
-EVOR_Item_Jaw_Venom           venomous fangs
+EVOR_Item_Jaw_Distend
+EVOR_Item_Jaw_Venom
 - Leg
-EVOR_Item_Leg_Normal          reinforced leg
-EVOR_Item_Leg_Hand            grasping leg
+EVOR_Item_Leg_Normal
+EVOR_Item_Leg_Hand
 - OtherOrgan
-EVOR_Item_Eye                 multispectrum eye
-EVOR_Item_Nose                micro-analyzer nose
-EVOR_Item_Nose_Pheromones     pheromone releaser nose
-EVOR_Item_Ear                 multifrequency ear
-EVOR_Item_Spine               neuro-accelerated spine
+EVOR_Item_Eye
+EVOR_Item_Nose
+EVOR_Item_Nose_Pheromones
+EVOR_Item_Ear
+EVOR_Item_Spine
 - PrimaryOrgan
-EVOR_Item_Heart               triwoven primary heart
-EVOR_Item_Kidney              triple filter pass kidney
-EVOR_Item_Lung                nano-alveoli lung
-EVOR_Item_Stomach             multichamber stomach
-EVOR_Item_Liver               quadlobe liver
+EVOR_Item_Heart
+EVOR_Item_Kidney
+EVOR_Item_Lung
+EVOR_Item_Stomach
+EVOR_Item_Liver
 - SkeletalParts
-EVOR_Item_Skin_Plating        multilayered dermal plating
-EVOR_Item_Skin_Flame          flame retardant skin
-EVOR_Item_Skin_Insulation     variable insulation skin
-EVOR_Item_Ribcage             calcium-alloy ribcage
+EVOR_Item_Skin_Plating
+EVOR_Item_Skin_Flame
+EVOR_Item_Skin_Insulation
+EVOR_Item_Ribcage
 - Tail
-EVOR_Item_Tail_Blade          serrated stinger tail
-EVOR_Item_Tail_Hand           manipulator tail
+EVOR_Item_Tail_Blade
+EVOR_Item_Tail_Hand
 -->
 
 <Operation Class="PatchOperationFindMod">
@@ -82,15 +82,15 @@ EVOR_Item_Tail_Hand           manipulator tail
   <match Class="PatchOperationSequence">
     <success>Always</success>
     <operations>
-<!-- EVOR -->
-<!--
+<!-- Abdomen -->
+<!-- EVOR_Item_Abd_ThirdLung -->
       <li Class="PatchOperationConditional">
-        <xpath>*/ThingDef[defName = "EVOR"]/graphicData</xpath>
+        <xpath>*/ThingDef[defName = "EVOR_Item_Abd_ThirdLung"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>*/ThingDef[defName = "EVOR"]/graphicData</xpath>
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_ThirdLung"]/graphicData</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <texPath>Things/Item/Health/AbdThirdLung</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -98,10 +98,10 @@ EVOR_Item_Tail_Hand           manipulator tail
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>*/ThingDef[defName = "EVOR"]</xpath>
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_ThirdLung"]</xpath>
           <value>
             <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <texPath>Things/Item/Health/AbdThirdLung</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -110,21 +110,1876 @@ EVOR_Item_Tail_Hand           manipulator tail
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>*/HediffDef[defName = "EVOR"]/defaultLabelColor</xpath>
+        <xpath>*/HediffDef[defName = "EVOR_Item_Abd_ThirdLung"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>*/HediffDef[defName = "EVOR"]/defaultLabelColor</xpath>
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_ThirdLung"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>*/HediffDef[defName = "EVOR"]</xpath>
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_ThirdLung"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </nomatch>
       </li>
--->
+<!-- EVOR_Item_Abd_SecondHeart -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Abd_SecondHeart"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_SecondHeart"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdSecondHeart</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_SecondHeart"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdSecondHeart</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Abd_SecondHeart"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_SecondHeart"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_SecondHeart"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Abd_Combat -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Combat"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Combat"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdCombat</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Combat"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdCombat</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Combat"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Combat"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Combat"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Abd_Hormone -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Hormone"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Hormone"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdHormone</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Hormone"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdHormone</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Hormone"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Hormone"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Hormone"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Abd_Lymph -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Lymph"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Lymph"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdLymph</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Lymph"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdLymph</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Lymph"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Lymph"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Lymph"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Abd_Cultivate -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Cultivate"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Cultivate"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdCultivate</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Abd_Cultivate"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/AbdCultivate</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Cultivate"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Cultivate"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Abd_Cultivate"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Arm -->
+<!-- EVOR_Item_NormalArm -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_NormalArm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_NormalArm"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/NormalArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_NormalArm"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/NormalArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_NormalArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_NormalArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_NormalArm"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_BoneSaber -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_BoneSaber"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_BoneSaber"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BoneSaber</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_BoneSaber"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BoneSaber</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_BoneSaber"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_BoneSaber"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_BoneSaber"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_HighPincer -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_HighPincer"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_HighPincer"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HighPincer</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_HighPincer"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HighPincer</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_HighPincer"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_HighPincer"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_HighPincer"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_SonicMace -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_SonicMace"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_SonicMace"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SonicMace</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_SonicMace"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SonicMace</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_SonicMace"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_SonicMace"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_SonicMace"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_PlatedLimb -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_PlatedLimb"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_PlatedLimb"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/PlatedLimb</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_PlatedLimb"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/PlatedLimb</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_PlatedLimb"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_PlatedLimb"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_PlatedLimb"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_ShockTentacle -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_ShockTentacle"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_ShockTentacle"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/ShockTentacle</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_ShockTentacle"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/ShockTentacle</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_ShockTentacle"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_ShockTentacle"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_ShockTentacle"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_RendingClaw -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_RendingClaw"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_RendingClaw"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/RendingClaw</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_RendingClaw"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/RendingClaw</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_RendingClaw"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_RendingClaw"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_RendingClaw"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Back -->
+<!-- EVOR_Item_Back_Wing -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Back_Wing"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Back_Wing"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BackWing</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Back_Wing"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BackWing</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Back_Wing"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Back_Wing"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Back_Wing"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Back_Hand -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Back_Hand"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Back_Hand"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BackHand</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Back_Hand"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BackHand</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Back_Hand"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Back_Hand"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Back_Hand"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Back_Muscle -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Back_Muscle"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Back_Muscle"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BackMuscle</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Back_Muscle"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BackMuscle</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Back_Muscle"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Back_Muscle"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Back_Muscle"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Brain -->
+<!-- EVOR_Item_Brain_Rest -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Rest"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Rest"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainRest</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Rest"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainRest</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Rest"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Rest"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Rest"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Physics -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Physics"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Physics"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainPhysics</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Physics"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainPhysics</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Physics"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Physics"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Physics"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Diplo -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Diplo"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Diplo"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainDiplo</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Diplo"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainDiplo</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Diplo"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Diplo"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Diplo"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Hyper -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Hyper"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Hyper"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainHyper</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Hyper"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainHyper</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Hyper"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Hyper"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Hyper"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Logic -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Logic"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Logic"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainLogic</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Logic"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainLogic</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Logic"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Logic"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Logic"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Bio -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Bio"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Bio"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainBio</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Bio"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainBio</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Bio"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Bio"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Bio"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Chem -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Chem"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Chem"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainChem</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Chem"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainChem</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Chem"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Chem"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Chem"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Brain_Nails -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Nails"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Nails"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainNails</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Brain_Nails"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/BrainNails</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Nails"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Nails"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Brain_Nails"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Head -->
+<!-- EVOR_Item_Skull_Shielding -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Skull_Shielding"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skull_Shielding"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkullShielding</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skull_Shielding"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkullShielding</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Skull_Shielding"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skull_Shielding"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skull_Shielding"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Skull_Plating -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Skull_Plating"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skull_Plating"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkullArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skull_Plating"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkullArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Skull_Plating"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skull_Plating"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skull_Plating"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- JawNeck -->
+<!-- EVOR_Item_Jaw_Distend -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Jaw_Distend"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Jaw_Distend"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/JawDistend</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Jaw_Distend"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/JawDistend</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Jaw_Distend"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Jaw_Distend"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Jaw_Distend"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Jaw_Venom -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Jaw_Venom"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Jaw_Venom"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/JawVenom</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Jaw_Venom"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/JawVenom</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Jaw_Venom"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Jaw_Venom"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Jaw_Venom"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Leg -->
+<!-- EVOR_Item_Leg_Normal -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Leg_Normal"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Leg_Normal"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/XLegNormal</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Leg_Normal"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/XLegNormal</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Leg_Normal"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Leg_Normal"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Leg_Normal"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Leg_Hand -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Leg_Hand"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Leg_Hand"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/XLegHand</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Leg_Hand"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/XLegHand</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Leg_Hand"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Leg_Hand"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Leg_Hand"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- OtherOrgan -->
+<!-- EVOR_Item_Eye -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Eye"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Eye"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/MultispectrumEye</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Eye"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/MultispectrumEye</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Eye"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Eye"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Eye"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Nose -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Nose"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Nose"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Nose</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Nose"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Nose</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Nose"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Nose"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Nose"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Nose_Pheromones -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Nose_Pheromones"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Nose_Pheromones"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/NosePheromones</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Nose_Pheromones"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/NosePheromones</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Nose_Pheromones"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Nose_Pheromones"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Nose_Pheromones"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Ear -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Ear"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Ear"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Ear</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Ear"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Ear</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Ear"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Ear"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Ear"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Spine -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Spine"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Spine"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Spine</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Spine"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Spine</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Spine"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Spine"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Spine"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- PrimaryOrgan -->
+<!-- EVOR_Item_Heart -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Heart"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Heart"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/TriwovenHearts</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Heart"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/TriwovenHearts</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Heart"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Heart"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Heart"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Kidney -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Kidney"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Kidney"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Kidney</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Kidney"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Kidney</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Kidney"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Kidney"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Kidney"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Lung -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Lung"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Lung"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Lung</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Lung"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Lung</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Lung"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Lung"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Lung"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Stomach -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Stomach"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Stomach"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Stomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Stomach"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Stomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Stomach"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Stomach"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Stomach"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Liver -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Liver"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Liver"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Liver</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Liver"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/Liver</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Liver"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Liver"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Liver"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- SkeletalParts -->
+<!-- EVOR_Item_Skin_Plating -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Plating"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Plating"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkinPlating</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Plating"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkinPlating</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Plating"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Plating"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Plating"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Skin_Flame -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Flame"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Flame"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkinFlame</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Flame"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkinFlame</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Flame"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Flame"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Flame"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Skin_Insulation -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Insulation"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Insulation"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkinInsulation</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Skin_Insulation"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/SkinInsulation</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Insulation"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Insulation"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Skin_Insulation"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Ribcage -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Ribcage"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Ribcage"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/CalciumAlloyRibcage</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Ribcage"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/CalciumAlloyRibcage</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Ribcage"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Ribcage"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Ribcage"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Tail -->
+<!-- EVOR_Item_Tail_Blade -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Tail_Blade"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Tail_Blade"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/TailBlade</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Tail_Blade"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/TailBlade</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Tail_Blade"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Tail_Blade"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Tail_Blade"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- EVOR_Item_Tail_Hand -->
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "EVOR_Item_Tail_Hand"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Tail_Hand"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/TailHand</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "EVOR_Item_Tail_Hand"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/TailHand</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "EVOR_Item_Tail_Hand"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Tail_Hand"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "EVOR_Item_Tail_Hand"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+
    </operations>
  </match>
 </Operation>
