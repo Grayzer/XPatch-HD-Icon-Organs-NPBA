@@ -200,12 +200,12 @@ MSE_AdamantiumBoneModule
 <!-- MSE -->
 <!--
       <li Class="PatchOperationConditional">
-        <xpath>*/ThingDef[defName = "MSE"]/graphicData</xpath>
+        <xpath>/Defs/ThingDef[defName = "MSE"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>*/ThingDef[defName = "MSE"]/graphicData</xpath>
+          <xpath>/Defs/ThingDef[defName = "MSE"]/graphicData</xpath>
           <value>
-            <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+            <graphicData>
+              <texPath>Things/Item/Health/Misc</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -213,10 +213,10 @@ MSE_AdamantiumBoneModule
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>*/ThingDef[defName = "MSE"]</xpath>
+          <xpath>/Defs/ThingDef[defName = "MSE"]</xpath>
           <value>
-            <graphicData Inherit="False">
-              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+            <graphicData>
+              <texPath>Things/Item/Health/Misc</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -225,15 +225,15 @@ MSE_AdamantiumBoneModule
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>*/HediffDef[defName = "MSE"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "MSE"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>*/HediffDef[defName = "MSE"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "MSE"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>*/HediffDef[defName = "MSE"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "MSE"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>

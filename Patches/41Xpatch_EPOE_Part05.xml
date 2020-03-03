@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- EPOE
+- Archotech
+TacticalCorneaImplant
+ConstructorCore
+FarmerCore
+MinerCore
+DoctorCore
+DiplomatCore
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Expanded Prosthetics and Organ Engineering</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- Expanded Prosthetics and Organ Engineering -->
+<!-- Ykara.EPOE -->
+<!-- Archotech -->
+<!-- TacticalCorneaImplant -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "TacticalCorneaImplant"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/TacticalCorneaImplant</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 204, 0)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "TacticalCorneaImplant"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+    </value>
+</li>
+<!-- ConstructorCore -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "ConstructorCore"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/ChipConstruction</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 204, 0)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "ConstructorCore"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+    </value>
+</li>
+<!-- FarmerCore -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "FarmerCore"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/ChipPlants</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 204, 0)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "FarmerCore"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+    </value>
+</li>
+<!-- MinerCore -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MinerCore"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/ChipMining</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 204, 0)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "MinerCore"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+    </value>
+</li>
+<!-- DoctorCore -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "DoctorCore"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/ChipMedical</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 204, 0)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "DoctorCore"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+    </value>
+</li>
+<!-- DiplomatCore -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "DiplomatCore"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/ChipSocial</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 204, 0)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "DiplomatCore"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+    </value>
+</li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>

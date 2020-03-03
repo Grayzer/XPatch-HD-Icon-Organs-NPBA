@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- Empty
+- Nature
+
+- Prostetic
+
+- Bionic
+
+- Advanced Bionic
+
+- Archotech
+
+- Advanced Archotech
+
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Empty</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- MSE -->
+<!--
+      <li Class="PatchOperationConditional">
+        <xpath>*/ThingDef[defName = "Empty"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "Empty"]/graphicData</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "Empty"]</xpath>
+          <value>
+            <graphicData Inherit="False">
+              <texPath>Things/Item/Health/HealthItemMisc</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 128, 128)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>*/HediffDef[defName = "Empty"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>*/HediffDef[defName = "Empty"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>*/HediffDef[defName = "Empty"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+-->
+   </operations>
+ </match>
+</Operation>
+</Patch>

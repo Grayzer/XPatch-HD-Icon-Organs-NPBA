@@ -1,0 +1,2230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- [FSF] Advanced Bionics Expansion -->
+<!-- Bionic -->
+  <!-- Implant -->
+    <!--
+    +Joywire
+    +Painstopper
+    -->
+  <!-- AI Chip -->
+    <!--
+    +FSFAIChipColonist
+    +FSFAIChipMelee
+    +FSFAIChipShooting
+    +FSFAIChipGlobalSpeed
+    +FSFAIChipArt
+    +FSFAIChipConstruction
+    +FSFAIChipCooking
+    +FSFAIChipCrafting
+    +FSFAIChipEducation
+    +FSFAIChipMedical
+    +FSFAIChipMining
+    +FSFAIChipPlants
+    +FSFAIChipResearch
+    +FSFAIChipSocial
+    -->
+  <!-- Body Implant -->
+    <!--
+    +FSFImplantCombatModule
+    +FSFImplantHazardModule
+    +FSFImplantSkullArmor
+    +FSFImplantTorsoMovement
+    +FSFImplantAugmentedSkeleton
+    +FSFImplantSubdermalArmor
+    +FSFImplantSubdermalArmorMkII
+    -->
+<!-- Advanced Bionic -->
+  <!--
+  +FSFAdvBionicEye
+  +FSFAdvBionicArm
+  +FSFAdvBionicPowerArm
+  +FSFAdvBionicTaserArm
+  +FSFAdvBionicLeg
+  +FSFAdvBionicEar
+  +FSFAdvBionicJaw
+  +FSFAdvBionicSpine
+  +FSFAdvBionicHeart
+  +FSFAdvBionicLung
+  +FSFAdvBionicKidney
+  +FSFAdvBionicLiver
+  +FSFAdvBionicStomach
+  +FSFAdvEfficientStomach
+  -->
+<!-- Archotech -->
+  <!-- AI Chip -->
+    <!--
+    +FSFArchotechAIChipGlobalSpeed
+    -->
+  <!-- Implant -->
+    <!--
+    +FSFArchotechImplantSubdermalArmor
+    -->
+  <!-- Body Part -->
+    <!--
+    +ArchotechEye
+    +ArchotechArm
+    +ArchotechLeg
+    +FSFArchotechPowerArm
+    +FSFArchotechEar
+    +FSFArchotechJaw
+    +FSFArchotechSpine
+    +FSFArchotechHeart
+    +FSFArchotechLung
+    +FSFArchotechKidney
+    +FSFArchotechLiver
+    +FSFArchotechStomach
+    -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>[FSF] Advanced Bionics Expansion Legacy Version</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!--
+      <li Class="PatchOperationRemove">
+        <xpath>*/HediffDef[@Name = "FSFAddedBodyPartAdvBionic"]/defaultLabelColor</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>*/ThingDef[@Name = "FSFBodyPartAdvBionicBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>*/HediffDef[@Name = "FSFImplantHediffAdvBionicBase"]/defaultLabelColor</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>*/HediffDef[@Name = "FSFImplantHediffArchotechBase"]/defaultLabelColor</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>*/HediffDef[@Name = "FSFAddedBodyPartArchotech"]/defaultLabelColor</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>*/ThingDef[@Name = "BodyPartArchotechBase"]/graphicData</xpath>
+      </li>
+-->
+<!-- Bionic -->
+<!-- Implant -->
+<!-- Joywire -->
+<!--
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "Joywire"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "Joywire"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Joywire</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Joywire"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Joywire</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "Joywire"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "Joywire"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "Joywire"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+-->
+<!-- Painstopper -->
+<!--
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "Painstopper"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "Painstopper"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Painstopper</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Painstopper"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Painstopper</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "Painstopper"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "Painstopper"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "Painstopper"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+-->
+<!-- AI Chip -->
+<!-- FSFAIChipColonist -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipColonist"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipColonist"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipColonist</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipColonist"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipColonist</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipColonist"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipColonist"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipColonist"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipMelee -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipMelee"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipMelee"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipMelee</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipMelee"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipMelee</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipMelee"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipMelee"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipMelee"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipShooting -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipShooting"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipShooting"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipShooting</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipShooting"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipShooting</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipShooting"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipShooting"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipShooting"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipGlobalSpeed -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipGlobalSpeed"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipGlobalSpeed"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipGlobalSpeed</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipGlobalSpeed"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipGlobalSpeed</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipGlobalSpeed"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipGlobalSpeed"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipGlobalSpeed"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipArt No Exist-->
+<!--
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipArt"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipArt"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipArt</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipArt"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipArt</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipArt"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipArt"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipArt"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+-->
+<!-- FSFAIChipConstruction -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipConstruction"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipConstruction"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipConstruction</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipConstruction"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipConstruction</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipConstruction"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipConstruction"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipConstruction"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipCooking -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipCooking"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipCooking"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipCooking</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipCooking"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipCooking</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipCooking"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipCooking"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipCooking"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipCrafting -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipCrafting"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipCrafting"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipCrafting</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipCrafting"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipCrafting</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipCrafting"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipCrafting"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipCrafting"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipEducation -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipEducation"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipEducation"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipEducation</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipEducation"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipEducation</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipEducation"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipEducation"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipEducation"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipMedical -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipMedical"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipMedical"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipMedical</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipMedical"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipMedical</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipMedical"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipMedical"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipMedical"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipMining -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipMining"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipMining"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipMining</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipMining"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipMining</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipMining"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipMining"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipMining"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipPlants -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipPlants"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipPlants"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipPlants</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipPlants"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipPlants</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipPlants"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipPlants"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipPlants"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipResearch -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipResearch"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipResearch"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipResearch</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipResearch"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipResearch</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipResearch"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipResearch"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipResearch"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAIChipSocial -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAIChipSocial"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipSocial"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipSocial</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAIChipSocial"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipSocial</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAIChipSocial"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipSocial"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAIChipSocial"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Body Implant -->
+<!-- FSFImplantCombatModule -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantCombatModule"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantCombatModule"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/CombatModule</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantCombatModule"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/CombatModule</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantCombatModule"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantCombatModule"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantCombatModule"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFImplantHazardModule -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantHazardModule"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantHazardModule"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HazardModule</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantHazardModule"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HazardModule</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantHazardModule"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantHazardModule"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantHazardModule"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFImplantSkullArmor -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantSkullArmor"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantSkullArmor"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/SkullArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantSkullArmor"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/SkullArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantSkullArmor"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantSkullArmor"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantSkullArmor"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFImplantTorsoMovement -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantTorsoMovement"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantTorsoMovement"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/TorsoMovement</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantTorsoMovement"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/TorsoMovement</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantTorsoMovement"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantTorsoMovement"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantTorsoMovement"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFImplantAugmentedSkeleton -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantAugmentedSkeleton"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantAugmentedSkeleton"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/AugmentedSkeleton</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantAugmentedSkeleton"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/AugmentedSkeleton</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantAugmentedSkeleton"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantAugmentedSkeleton"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantAugmentedSkeleton"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFImplantSubdermalArmor -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantSubdermalArmor"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantSubdermalArmor"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/SubdermalArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantSubdermalArmor"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/SubdermalArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantSubdermalArmor"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantSubdermalArmor"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantSubdermalArmor"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFImplantSubdermalArmorMkII -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFImplantSubdermalArmorMkII"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantSubdermalArmorMkII"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/XSubdermalArmorMkII</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFImplantSubdermalArmorMkII"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/XSubdermalArmorMkII</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(51, 255, 173)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFImplantSubdermalArmorMkII"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantSubdermalArmorMkII"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFImplantSubdermalArmorMkII"]</xpath>
+          <value>
+            <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Advanced Bionic -->
+<!-- FSFAdvBionicEye -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicEye"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicEye"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Eye</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicEye"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Eye</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicEye"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicEye"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicEye"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicArm -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicArm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicArm"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Arm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Arm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicArm"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicPowerArm -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicPowerArm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicPowerArm"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/PowerArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicPowerArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/PowerArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicPowerArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicPowerArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicPowerArm"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicTaserArm -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicTaserArm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicTaserArm"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/TaserArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicTaserArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/TaserArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicTaserArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicTaserArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicTaserArm"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicLeg -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLeg"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLeg"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Leg</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLeg"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Leg</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLeg"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLeg"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLeg"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicEar -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicEar"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicEar"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Ear</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicEar"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Ear</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicEar"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicEar"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicEar"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicJaw -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicJaw"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicJaw"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Jaw</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicJaw"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Jaw</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicJaw"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicJaw"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicJaw"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicSpine -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicSpine"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicSpine"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Spine</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicSpine"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Spine</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicSpine"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicSpine"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicSpine"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicHeart -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicHeart"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicHeart"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Heart</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicHeart"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Heart</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicHeart"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicHeart"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicHeart"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicLung -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLung"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLung"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Lung</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Lung</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLung"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLung"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLung"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicKidney -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicKidney"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicKidney"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Kidney</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Kidney</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicKidney"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicKidney"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicKidney"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicLiver -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLiver"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLiver"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Liver</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Liver</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLiver"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLiver"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicLiver"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvBionicStomach -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvBionicStomach"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicStomach"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Stomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvBionicStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Stomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvBionicStomach"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicStomach"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvBionicStomach"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFAdvEfficientStomach -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFAdvEfficientStomach"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvEfficientStomach"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/AdvEfficientStomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFAdvEfficientStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/AdvEfficientStomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(0, 179, 60)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFAdvEfficientStomach"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvEfficientStomach"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFAdvEfficientStomach"]</xpath>
+          <value>
+            <defaultLabelColor>(0, 179, 60)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Archotech -->
+<!-- AI Chip -->
+<!-- FSFArchotechAIChipGlobalSpeed -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechAIChipGlobalSpeed"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechAIChipGlobalSpeed"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipGlobalSpeed</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechAIChipGlobalSpeed"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/ChipGlobalSpeed</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechAIChipGlobalSpeed"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechAIChipGlobalSpeed"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechAIChipGlobalSpeed"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Implant -->
+<!-- FSFArchotechImplantSubdermalArmor -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechImplantSubdermalArmor"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechImplantSubdermalArmor"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/SubdermalArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechImplantSubdermalArmor"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/SubdermalArmor</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechImplantSubdermalArmor"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechImplantSubdermalArmor"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechImplantSubdermalArmor"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- Body Part -->
+<!-- ArchotechEye -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ArchotechEye"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "ArchotechEye"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Eye</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ArchotechEye"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Eye</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "ArchotechEye"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "ArchotechEye"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "ArchotechEye"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- ArchotechArm -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ArchotechArm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "ArchotechArm"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Arm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ArchotechArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Arm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "ArchotechArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "ArchotechArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "ArchotechArm"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- ArchotechLeg -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "ArchotechLeg"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "ArchotechLeg"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Leg</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ArchotechLeg"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Leg</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "ArchotechLeg"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "ArchotechLeg"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "ArchotechLeg"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechPowerArm -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechPowerArm"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechPowerArm"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/PowerArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechPowerArm"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/PowerArm</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechPowerArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechPowerArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechPowerArm"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechEar -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechEar"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechEar"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Ear</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechEar"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Ear</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechEar"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechEar"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechEar"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechJaw -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechJaw"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechJaw"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Jaw</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechJaw"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Jaw</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechJaw"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechJaw"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechJaw"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechSpine -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechSpine"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechSpine"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Spine</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechSpine"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Spine</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechSpine"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechSpine"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechSpine"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechHeart -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechHeart"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechHeart"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Heart</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechHeart"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Heart</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechHeart"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechHeart"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechHeart"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechLung -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechLung"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechLung"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Lung</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechLung"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Lung</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechLung"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechLung"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechLung"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechKidney -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechKidney"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechKidney"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Kidney</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechKidney"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Kidney</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechKidney"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechKidney"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechKidney"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechLiver -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechLiver"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechLiver"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Liver</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechLiver"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Liver</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechLiver"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechLiver"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechLiver"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+<!-- FSFArchotechStomach -->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "FSFArchotechStomach"]/graphicData</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechStomach"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Stomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FSFArchotechStomach"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/Stomach</texPath>
+              <graphicClass>Graphic_StackCount</graphicClass>
+              <color>(255, 204, 0)</color>
+              <drawSize>1.00</drawSize>
+            </graphicData>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "FSFArchotechStomach"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechStomach"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "FSFArchotechStomach"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>

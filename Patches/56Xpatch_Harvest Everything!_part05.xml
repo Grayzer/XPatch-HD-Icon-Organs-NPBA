@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- Harvest Everything! -->
+<!-- Ogliss.Ykara.HarvestEverything -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Harvest Everything!</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- Harvest Everything! -->
+<!-- Stomach -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Stomach"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Stomach</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "Stomach"]</xpath>
+    <value>
+      <defaultLabelColor>(255, 255, 255)</defaultLabelColor>
+    </value>
+</li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>
