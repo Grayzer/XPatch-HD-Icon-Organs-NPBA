@@ -20,3 +20,6 @@ Rimworld Core</br>
 [FSF] Advanced Bionics Expansion</br>
 Archotech Expanded</br>
 RimJobWord [Attension! Content 21+]</br>
+EvolvedOrgansRedux</br>
+Expanded Prosthetics and Organ Engineering from Ykara</br>
+Harvest Everything!</br>
