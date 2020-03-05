@@ -14,12 +14,12 @@
   Advanced Archotech    (204, 102, 0)
 -->
 
-<!-- Medical System Expansion
+<!-- Medical System Expansion - Revived
 - Nature
-Heart
-Lung
-Kidney
-Liver
+Heart Exist
+Lung Exist
+Kidney Exist
+Liver Exist
 Brain
 Stomach
 Leg
@@ -37,10 +37,10 @@ Jaw
 PegLeg
 WoodenFoot
 Denture
-SimpleProstheticLeg
-SimpleProstheticArm
-SimpleProstheticHeart
-CochlearImplant
+SimpleProstheticLeg Exist
+SimpleProstheticArm Exist
+SimpleProstheticHeart Exist
+CochlearImplant Exist
 SimpleProstheticFoot
 SimpleProstheticToe
 SimpleProstheticHand
@@ -55,14 +55,14 @@ SimpleProstheticRadius
 SimpleProstheticFemur
 SimpleProstheticTibia
 - Bionic
-BionicEye
-BionicArm
-BionicLeg
-BionicSpine
-BionicHeart
-BionicStomach
-BionicEar
-PowerClaw
+BionicEye Exist
+BionicArm Exist
+BionicLeg Exist
+BionicSpine Exist
+BionicHeart Exist
+BionicStomach Exist
+BionicEar Exist
+PowerClaw Exist
 BionicLung
 BionicKidney
 BionicLiver
@@ -81,8 +81,8 @@ BionicRadius
 BionicFemur
 BionicTibia
 - Implant
-Joywire
-Painstopper
+Joywire Exist
+Painstopper Exist
 MSE_EndoskeletonStimulator
 MSE_MuscleStimulator
 MSE_BuilderAI
@@ -122,9 +122,9 @@ MSE_PowerArmModule
 MSE_PowerClawModule
 MSE_AdamantiumCoatedBoneModule
 - Archotech
-ArchotechEye
-ArchotechArm
-ArchotechLeg
+ArchotechEye Exist
+ArchotechArm Exist
+ArchotechLeg Exist
 ArchotechHeart
 ArchotechStomach
 ArchotechLung
@@ -192,10 +192,10 @@ MSE_AdamantiumBoneModule
 
 <Operation Class="PatchOperationFindMod">
 <mods>
-<li>Medical System Expansion</li>
+<li>Medical System Expansion - Revived</li>
 </mods>
   <match Class="PatchOperationSequence">
-    <success>Always</success>
+    <success>Normal</success>
     <operations>
 <!-- MSE -->
 <!--
