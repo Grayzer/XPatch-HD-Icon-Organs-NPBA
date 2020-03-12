@@ -80,7 +80,7 @@ EVOR_Item_Tail_Hand
 <li>EvolvedOrgansRedux</li>
 </mods>
   <match Class="PatchOperationSequence">
-    <success>Normal</success>
+    <success>Always</success>
     <operations>
 <!-- Abdomen -->
 <!-- EVOR_Item_Abd_ThirdLung -->
@@ -110,15 +110,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_ThirdLung"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_ThirdLung"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_ThirdLung"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_ThirdLung"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_ThirdLung"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_ThirdLung"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -151,15 +151,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_SecondHeart"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_SecondHeart"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_SecondHeart"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_SecondHeart"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_SecondHeart"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_SecondHeart"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -192,15 +192,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Combat"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Combat"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Combat"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Combat"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Combat"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Combat"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -233,15 +233,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Hormone"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Hormone"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Hormone"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Hormone"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Hormone"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Hormone"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -274,15 +274,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Lymph"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Lymph"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Lymph"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Lymph"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Lymph"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Lymph"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -315,15 +315,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Cultivate"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Cultivate"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Cultivate"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Cultivate"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Abd_Cultivate"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_Cultivate"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -357,15 +357,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_NormalArm"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_NormalArm"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_NormalArm"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_NormalArm"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_NormalArm"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_NormalArm"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_NormalArm"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_NormalArm"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_NormalArm"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -398,15 +413,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_BoneSaber"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_BoneSaber"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_BoneSaber"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_BoneSaber"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_BoneSaber"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_BoneSaber"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_BoneSaber"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_BoneSaber"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_BoneSaber"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -439,15 +469,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_HighPincer"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_HighPincer"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_HighPincer"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_HighPincer"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_HighPincer"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_HighPincer"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_HighPincer"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_HighPincer"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_HighPincer"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -480,15 +525,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_SonicMace"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_SonicMace"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_SonicMace"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_SonicMace"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_SonicMace"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_SonicMace"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_SonicMace"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_SonicMace"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_SonicMace"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -521,15 +581,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_PlatedLimb"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_PlatedLimb"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_PlatedLimb"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_PlatedLimb"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_PlatedLimb"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_PlatedLimb"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_PlatedLimb"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_PlatedLimb"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_PlatedLimb"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -562,15 +637,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_ShockTentacle"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_ShockTentacle"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_ShockTentacle"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_ShockTentacle"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_ShockTentacle"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_ShockTentacle"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_ShockTentacle"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_ShockTentacle"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_ShockTentacle"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -603,15 +693,30 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_RendingClaw"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_RendingClaw"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_RendingClaw"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_RendingClaw"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_RendingClaw"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Primary_RendingClaw"]</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_RendingClaw"]/defaultLabelColor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_RendingClaw"]/defaultLabelColor</xpath>
+          <value>
+            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Secondary_RendingClaw"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -645,15 +750,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Wing"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Wing"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Wing"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Wing"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Wing"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Wing"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -686,15 +791,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Hand"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Hand"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Hand"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Hand"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Hand"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Hand"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -727,15 +832,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Muscle"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Muscle"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Muscle"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Muscle"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Back_Muscle"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Back_Muscle"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -768,6 +873,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+<!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Rest"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
@@ -783,6 +889,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+-->
 <!-- EVOR_Item_Brain_Physics -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Physics"]/graphicData</xpath>
@@ -809,6 +916,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+<!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Physics"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
@@ -824,6 +932,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+-->
 <!-- EVOR_Item_Brain_Diplo -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Diplo"]/graphicData</xpath>
@@ -850,6 +959,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+<!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Diplo"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
@@ -865,6 +975,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+-->
 <!-- EVOR_Item_Brain_Hyper -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Hyper"]/graphicData</xpath>
@@ -892,15 +1003,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Hyper"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Brain_Hyper"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Hyper"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Brain_Hyper"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Hyper"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Brain_Hyper"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -932,6 +1043,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+<!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Logic"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
@@ -947,6 +1059,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+-->
 <!-- EVOR_Item_Brain_Bio -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Bio"]/graphicData</xpath>
@@ -973,6 +1086,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+<!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Bio"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
@@ -988,6 +1102,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+-->
 <!-- EVOR_Item_Brain_Chem -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Chem"]/graphicData</xpath>
@@ -1014,6 +1129,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+<!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Chem"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
@@ -1029,6 +1145,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
+-->
 <!-- EVOR_Item_Brain_Nails -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Nails"]/graphicData</xpath>
@@ -1056,15 +1173,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Nails"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Brain_Nails"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Nails"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Brain_Nails"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Nails"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Brain_Nails"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1098,15 +1215,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skull_Shielding"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skull_Shielding"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skull_Shielding"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skull_Shielding"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skull_Shielding"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skull_Shielding"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1139,15 +1256,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skull_Plating"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skull_Plating"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skull_Plating"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skull_Plating"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skull_Plating"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skull_Plating"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1181,15 +1298,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Jaw_Distend"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Jaw_Distend"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Jaw_Distend"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Jaw_Distend"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Jaw_Distend"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Jaw_Distend"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1222,15 +1339,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Jaw_Venom"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Jaw_Venom"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Jaw_Venom"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Jaw_Venom"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Jaw_Venom"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Jaw_Venom"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1264,15 +1381,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Leg_Normal"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Leg_Normal"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Leg_Normal"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Leg_Normal"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Leg_Normal"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Leg_Normal"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1305,15 +1422,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Leg_Hand"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Leg_Hand"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Leg_Hand"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Leg_Hand"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Leg_Hand"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Leg_Hand"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1347,15 +1464,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Eye"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Eye"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Eye"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Eye"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Eye"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Eye"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1388,15 +1505,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Nose"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Nose"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Nose"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Nose"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Nose"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Nose"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1429,15 +1546,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Nose_Pheromones"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Nose_Pheromones"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Nose_Pheromones"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Nose_Pheromones"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Nose_Pheromones"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Nose_Pheromones"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1470,15 +1587,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Ear"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Ear"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Ear"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Ear"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Ear"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Ear"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1511,15 +1628,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Spine"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Spine"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Spine"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Spine"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Spine"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Spine"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1553,15 +1670,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Heart"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Heart"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Heart"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Heart"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Heart"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Heart"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1594,15 +1711,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Kidney"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Kidney"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Kidney"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Kidney"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Kidney"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Kidney"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1635,15 +1752,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Lung"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Lung"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Lung"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Lung"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Lung"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Lung"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1676,15 +1793,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Stomach"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Stomach"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Stomach"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Stomach"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Stomach"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Stomach"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1717,15 +1834,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Liver"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Liver"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Liver"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Liver"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Liver"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Liver"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1759,15 +1876,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Plating"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Plating"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Plating"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Plating"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Plating"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Plating"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1800,15 +1917,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Flame"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Flame"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Flame"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Flame"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Flame"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Flame"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1841,15 +1958,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Insulation"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Insulation"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Insulation"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Insulation"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Skin_Insulation"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Skin_Insulation"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1882,15 +1999,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Ribcage"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Ribcage"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Ribcage"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Ribcage"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Ribcage"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Ribcage"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1924,15 +2041,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Tail_Blade"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Tail_Blade"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Tail_Blade"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Tail_Blade"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Tail_Blade"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Tail_Blade"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
@@ -1965,15 +2082,15 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Item_Tail_Hand"]/defaultLabelColor</xpath>
+        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Tail_Hand"]/defaultLabelColor</xpath>
         <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Tail_Hand"]/defaultLabelColor</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Tail_Hand"]/defaultLabelColor</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>
         </match>
         <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Item_Tail_Hand"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Tail_Hand"]</xpath>
           <value>
             <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
           </value>

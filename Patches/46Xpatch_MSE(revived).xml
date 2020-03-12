@@ -37,6 +37,13 @@ Jaw
 PegLeg
 WoodenFoot
 Denture
+WoodenToe
+WoodenArm
+HookHand
+WoodenFinger
+Eyepatch
+WoodenEar
+WoodenNose
 SimpleProstheticLeg Exist
 SimpleProstheticArm Exist
 SimpleProstheticHeart Exist
@@ -855,6 +862,293 @@ MSE_AdamantiumBoneModule
   </match>
   <nomatch Class="PatchOperationAdd">
     <xpath>/Defs/HediffDef[defName = "Denture"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- WoodenToe -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "WoodenToe"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "WoodenToe"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Toe</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "WoodenToe"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Toe</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "WoodenToe"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "WoodenToe"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "WoodenToe"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- WoodenArm -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "WoodenArm"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "WoodenArm"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Arm</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "WoodenArm"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Arm</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "WoodenArm"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "WoodenArm"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "WoodenArm"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- HookHand -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "HookHand"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "HookHand"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/HookHand</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "HookHand"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/HookHand</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "HookHand"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "HookHand"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "HookHand"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- WoodenFinger -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "WoodenFinger"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "WoodenFinger"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Finger</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "WoodenFinger"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Finger</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "WoodenFinger"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "WoodenFinger"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "WoodenFinger"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- Eyepatch -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "Eyepatch"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "Eyepatch"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/XEyePatch</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Eyepatch"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/XEyePatch</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "Eyepatch"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "Eyepatch"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "Eyepatch"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- WoodenEar -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "WoodenEar"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "WoodenEar"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Ear</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "WoodenEar"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Ear</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "WoodenEar"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "WoodenEar"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "WoodenEar"]</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </nomatch>
+</li>
+<!-- WoodenNose -->
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "WoodenNose"]/graphicData</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "WoodenNose"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Nose</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "WoodenNose"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Nose</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(210, 166, 121)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+  </nomatch>
+</li>
+<li Class="PatchOperationConditional">
+  <xpath>/Defs/HediffDef[defName = "WoodenNose"]/defaultLabelColor</xpath>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "WoodenNose"]/defaultLabelColor</xpath>
+    <value>
+      <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
+    </value>
+  </match>
+  <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName = "WoodenNose"]</xpath>
     <value>
       <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
     </value>
