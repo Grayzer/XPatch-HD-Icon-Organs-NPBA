@@ -13,7 +13,6 @@
   Archotech             (255, 204, 0)
   Advanced Archotech    (204, 102, 0)
 -->
-
 <!-- RimWorld Core-->
 <!-- Luden.RimWorld -->
 <!--
@@ -44,25 +43,26 @@
 +ArchotechArm
 +ArchotechLeg
 -->
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
+<Operation Class="PatchOperationConditional">
+  <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
+  <nomatch Class="PatchOperationSequence">
+    <success>Normal</success>
     <operations>
-
-<li Class="PatchOperationRemove">
-  <xpath>*/HediffDef[@Name = "ImplantHediffBase"]/defaultLabelColor</xpath>
-</li>
-<li Class="PatchOperationRemove">
-  <xpath>*/ThingDef[@Name = "BodyPartNaturalBase"]/graphicData</xpath>
-</li>
-<li Class="PatchOperationRemove">
-  <xpath>*/ThingDef[@Name = "BodyPartProstheticBase"]/graphicData</xpath>
-</li>
-<li Class="PatchOperationRemove">
-  <xpath>*/ThingDef[@Name = "BodyPartBionicBase"]/graphicData</xpath>
-</li>
-<li Class="PatchOperationRemove">
-  <xpath>*/ThingDef[@Name = "BodyPartArchotechBase"]/graphicData</xpath>
-</li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/HediffDef[@Name = "ImplantHediffBase"]/defaultLabelColor</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name = "BodyPartNaturalBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name = "BodyPartProstheticBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name = "BodyPartBionicBase"]/graphicData</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@Name = "BodyPartArchotechBase"]/graphicData</xpath>
+      </li>
 
 <!-- Nature -->
 <!-- Heart -->
@@ -113,6 +113,17 @@
     </graphicData>
   </value>
 </li>
+<!--
+Авторов игры вот за это я могу назвать только как Дибилоидные шизоиды.
+Сделать абстракцию на хедиф через Ж... Это талант.
+Невозможно установить хедиф цвета на ванильные органы вообще никаким образом!!!
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/HediffDef[defName="Heart" or defName="Lung" or defName="Kidney" or defName="Liver"]</xpath>
+  <value>
+    <defaultLabelColor>(255, 255, 255)</defaultLabelColor>
+  </value>
+</li>
+-->
 <!-- Prostetic -->
 <!-- SimpleProstheticLeg -->
 <li Class="PatchOperationAdd">
@@ -124,12 +135,6 @@
       <color>(210, 166, 121)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "SimpleProstheticLeg"]</xpath>
-  <value>
-    <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
   </value>
 </li>
 <!-- SimpleProstheticArm -->
@@ -144,12 +149,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "SimpleProstheticArm"]</xpath>
-  <value>
-    <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
-  </value>
-</li>
 <!-- SimpleProstheticHeart -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "SimpleProstheticHeart"]</xpath>
@@ -160,12 +159,6 @@
       <color>(210, 166, 121)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "SimpleProstheticHeart"]</xpath>
-  <value>
-    <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
   </value>
 </li>
 <!-- CochlearImplant -->
@@ -181,7 +174,7 @@
   </value>
 </li>
 <li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "CochlearImplant"]</xpath>
+  <xpath>/Defs/HediffDef[defName="SimpleProstheticLeg" or defName="SimpleProstheticArm" or defName="SimpleProstheticHeart" or defName="CochlearImplant"]</xpath>
   <value>
     <defaultLabelColor>(210, 166, 121)</defaultLabelColor>
   </value>
@@ -199,12 +192,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicEye"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
-  </value>
-</li>
 <!-- BionicArm -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "BionicArm"]</xpath>
@@ -215,12 +202,6 @@
       <color>(51, 255, 173)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicArm"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
   </value>
 </li>
 <!-- BionicLeg -->
@@ -235,12 +216,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicLeg"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
-  </value>
-</li>
 <!-- BionicSpine -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "BionicSpine"]</xpath>
@@ -251,12 +226,6 @@
       <color>(51, 255, 173)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicSpine"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
   </value>
 </li>
 <!-- BionicHeart -->
@@ -271,12 +240,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicHeart"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
-  </value>
-</li>
 <!-- BionicStomach -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "BionicStomach"]</xpath>
@@ -287,12 +250,6 @@
       <color>(51, 255, 173)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicStomach"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
   </value>
 </li>
 <!-- BionicEar -->
@@ -307,12 +264,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "BionicEar"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
-  </value>
-</li>
 <!-- PowerClaw -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "PowerClaw"]</xpath>
@@ -323,12 +274,6 @@
       <color>(51, 255, 173)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "PowerClaw"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
   </value>
 </li>
 <!-- Painstopper -->
@@ -343,12 +288,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "Painstopper"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
-  </value>
-</li>
 <!-- Joywire -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "Joywire"]</xpath>
@@ -361,15 +300,12 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "Joywire"]</xpath>
-  <value>
-    <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
-  </value>
-</li>
 <!-- DeathAcidifier -->
-<li Class="PatchOperationReplace">
+<li Class="PatchOperationRemove">
   <xpath>/Defs/ThingDef[defName = "DeathAcidifier"]/graphicData</xpath>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName = "DeathAcidifier"]</xpath>
   <value>
     <graphicData>
       <texPath>Things/Item/Health/Toxic</texPath>
@@ -380,7 +316,7 @@
   </value>
 </li>
 <li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "DeathAcidifier"]</xpath>
+  <xpath>/Defs/HediffDef[defName="BionicEye" or defName="BionicArm" or defName="BionicLeg" or defName="BionicSpine" or defName="BionicHeart" or defName="BionicStomach" or defName="BionicEar" or defName="PowerClaw" or defName="DeathAcidifier" or defName="Joywire" or defName="Painstopper"]</xpath>
   <value>
     <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
   </value>
@@ -398,12 +334,6 @@
     </graphicData>
   </value>
 </li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "ArchotechEye"]</xpath>
-  <value>
-    <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
-  </value>
-</li>
 <!-- ArchotechArm -->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "ArchotechArm"]</xpath>
@@ -414,12 +344,6 @@
       <color>(255, 204, 0)</color>
       <drawSize>1.00</drawSize>
     </graphicData>
-  </value>
-</li>
-<li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "ArchotechArm"]</xpath>
-  <value>
-    <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
   </value>
 </li>
 <!-- ArchotechLeg -->
@@ -435,12 +359,19 @@
   </value>
 </li>
 <li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName = "ArchotechLeg"]</xpath>
+  <xpath>/Defs/HediffDef[defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]</xpath>
   <value>
     <defaultLabelColor>(255, 204, 0)</defaultLabelColor>
   </value>
 </li>
 
-   </operations>
+</operations>
+</nomatch>
+<match Class="PatchOperationTest">
+  <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
+  <success>Normal</success>
+</match>
+
 </Operation>
+
 </Patch>

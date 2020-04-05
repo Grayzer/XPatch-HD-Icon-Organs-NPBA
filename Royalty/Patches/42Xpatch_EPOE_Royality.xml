@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- EPOE -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Expanded Prosthetics and Organ Engineering</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Normal</success>
+    <operations>
+
+<!-- Expanded Prosthetics and Organ Engineering -->
+<!-- Ykara.EPOE -->
+
+
+   </operations>
+ </match>
+</Operation>
+</Patch>
