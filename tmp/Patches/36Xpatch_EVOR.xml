@@ -22,31 +22,27 @@ EVOR_Item_Abd_SecondHeart
 EVOR_Item_Abd_Combat
 EVOR_Item_Abd_Hormone
 EVOR_Item_Abd_Lymph
-EVOR_Item_Abd_Cultivate Removed
-EVOR_Item_Abd_NoAge
-- Artifact
-EVOR_Item_Artifact_Lesions
-EVOR_Item_Artifact_Tortoise
+EVOR_Item_Abd_Cultivate
 - Arm
 EVOR_Item_NormalArm
 EVOR_Item_BoneSaber
 EVOR_Item_HighPincer
 EVOR_Item_SonicMace
 EVOR_Item_PlatedLimb
-EVOR_Item_ShockTentacle Removed
+EVOR_Item_ShockTentacle
 EVOR_Item_RendingClaw
 - Back
 EVOR_Item_Back_Wing
 EVOR_Item_Back_Hand
 EVOR_Item_Back_Muscle
 - Brain
-EVOR_Item_Brain_Rest Removed
-EVOR_Item_Brain_Physics Removed
-EVOR_Item_Brain_Diplo Removed
+EVOR_Item_Brain_Rest
+EVOR_Item_Brain_Physics
+EVOR_Item_Brain_Diplo
 EVOR_Item_Brain_Hyper
-EVOR_Item_Brain_Logic Removed
-EVOR_Item_Brain_Bio Removed
-EVOR_Item_Brain_Chem Removed
+EVOR_Item_Brain_Logic
+EVOR_Item_Brain_Bio
+EVOR_Item_Brain_Chem
 EVOR_Item_Brain_Nails
 - Head
 EVOR_Item_Skull_Shielding
@@ -77,10 +73,6 @@ EVOR_Item_Ribcage
 - Tail
 EVOR_Item_Tail_Blade
 EVOR_Item_Tail_Hand
-- Royalty
-?EVOR_Item_Skull_Resonance
-?EVOR_Item_Artifact_Royalty_NornCrown
-?EVOR_Item_Artifact_Royalty_ReactiveWorms
 -->
 
 <Operation Class="PatchOperationFindMod">
@@ -296,8 +288,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
-<!-- EVOR_Item_Abd_Cultivate Removed -->
-<!--
+<!-- EVOR_Item_Abd_Cultivate -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Abd_Cultivate"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -338,131 +329,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
-<!-- EVOR_Item_Abd_NoAge -->
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName = "EVOR_Item_Abd_NoAge"]/graphicData</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName = "EVOR_Item_Abd_NoAge"]/graphicData</xpath>
-          <value>
-            <graphicData>
-              <texPath>Things/Item/Health/NoAge</texPath>
-              <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 128, 128)</color>
-              <drawSize>1.00</drawSize>
-            </graphicData>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName = "EVOR_Item_Abd_NoAge"]</xpath>
-          <value>
-            <graphicData>
-              <texPath>Things/Item/Health/NoAge</texPath>
-              <graphicClass>Graphic_StackCount</graphicClass>
-              <color>(255, 128, 128)</color>
-              <drawSize>1.00</drawSize>
-            </graphicData>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_NoAge"]/defaultLabelColor</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_NoAge"]/defaultLabelColor</xpath>
-          <value>
-            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Abd_NoAge"]</xpath>
-          <value>
-            <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
-          </value>
-        </nomatch>
-      </li>
-<!-- Artifact -->
-<!-- EVOR_Item_Artifact_Lesions -->
-<li Class="PatchOperationConditional">
-  <xpath>/Defs/ThingDef[defName = "EVOR_Item_Artifact_Lesions"]/graphicData</xpath>
-  <match Class="PatchOperationReplace">
-    <xpath>/Defs/ThingDef[defName = "EVOR_Item_Artifact_Lesions"]/graphicData</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Item/Health/Lesions</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
-        <color>(255, 128, 128)</color>
-        <drawSize>1.00</drawSize>
-      </graphicData>
-    </value>
-  </match>
-  <nomatch Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "EVOR_Item_Artifact_Lesions"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Item/Health/Lesions</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
-        <color>(255, 128, 128)</color>
-        <drawSize>1.00</drawSize>
-      </graphicData>
-    </value>
-  </nomatch>
-</li>
-<li Class="PatchOperationConditional">
-  <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Artifact_Lesions"]/defaultLabelColor</xpath>
-  <match Class="PatchOperationReplace">
-    <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Artifact_Lesions"]/defaultLabelColor</xpath>
-    <value>
-      <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
-    </value>
-  </match>
-  <nomatch Class="PatchOperationAdd">
-    <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Artifact_Lesions"]</xpath>
-    <value>
-      <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
-    </value>
-  </nomatch>
-</li>
-<!-- EVOR_Item_Artifact_Tortoise -->
-<li Class="PatchOperationConditional">
-  <xpath>/Defs/ThingDef[defName = "EVOR_Item_Artifact_Tortoise"]/graphicData</xpath>
-  <match Class="PatchOperationReplace">
-    <xpath>/Defs/ThingDef[defName = "EVOR_Item_Artifact_Tortoise"]/graphicData</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Item/Health/Tortoise</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
-        <color>(255, 128, 128)</color>
-        <drawSize>1.00</drawSize>
-      </graphicData>
-    </value>
-  </match>
-  <nomatch Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "EVOR_Item_Artifact_Tortoise"]</xpath>
-    <value>
-      <graphicData>
-        <texPath>Things/Item/Health/Tortoise</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
-        <color>(255, 128, 128)</color>
-        <drawSize>1.00</drawSize>
-      </graphicData>
-    </value>
-  </nomatch>
-</li>
-<li Class="PatchOperationConditional">
-  <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Artifacts_Tortoise"]/defaultLabelColor</xpath>
-  <match Class="PatchOperationReplace">
-    <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Artifacts_Tortoise"]/defaultLabelColor</xpath>
-    <value>
-      <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
-    </value>
-  </match>
-  <nomatch Class="PatchOperationAdd">
-    <xpath>/Defs/HediffDef[defName = "EVOR_Hediff_Artifacts_Tortoise"]</xpath>
-    <value>
-      <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
-    </value>
-  </nomatch>
-</li>
 <!-- Arm -->
 <!-- EVOR_Item_NormalArm -->
       <li Class="PatchOperationConditional">
@@ -744,8 +610,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
-<!-- EVOR_Item_ShockTentacle Removed -->
-<!--
+<!-- EVOR_Item_ShockTentacle -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_ShockTentacle"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -801,7 +666,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!-- EVOR_Item_RendingClaw -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_RendingClaw"]/graphicData</xpath>
@@ -983,8 +847,7 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
 <!-- Brain -->
-<!-- EVOR_Item_Brain_Rest Removed -->
-<!--
+<!-- EVOR_Item_Brain_Rest -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Rest"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -1010,7 +873,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Rest"]/defaultLabelColor</xpath>
@@ -1028,8 +890,7 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
 -->
-<!-- EVOR_Item_Brain_Physics Removed -->
-<!--
+<!-- EVOR_Item_Brain_Physics -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Physics"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -1055,7 +916,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Physics"]/defaultLabelColor</xpath>
@@ -1073,8 +933,7 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
 -->
-<!-- EVOR_Item_Brain_Diplo Removed -->
-<!--
+<!-- EVOR_Item_Brain_Diplo -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Diplo"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -1100,7 +959,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Diplo"]/defaultLabelColor</xpath>
@@ -1159,8 +1017,7 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
-<!-- EVOR_Item_Brain_Logic Removed -->
-<!--
+<!-- EVOR_Item_Brain_Logic -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Logic"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -1186,7 +1043,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Logic"]/defaultLabelColor</xpath>
@@ -1204,8 +1060,7 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
 -->
-<!-- EVOR_Item_Brain_Bio Removed -->
-<!--
+<!-- EVOR_Item_Brain_Bio -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Bio"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -1231,7 +1086,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Bio"]/defaultLabelColor</xpath>
@@ -1249,8 +1103,7 @@ EVOR_Item_Tail_Hand
         </nomatch>
       </li>
 -->
-<!-- EVOR_Item_Brain_Chem Removed -->
-<!--
+<!-- EVOR_Item_Brain_Chem -->
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "EVOR_Item_Brain_Chem"]/graphicData</xpath>
         <match Class="PatchOperationReplace">
@@ -1276,7 +1129,6 @@ EVOR_Item_Tail_Hand
           </value>
         </nomatch>
       </li>
--->
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/HediffDef[defName = "EVOR_Item_Brain_Chem"]/defaultLabelColor</xpath>
@@ -2169,7 +2021,7 @@ EVOR_Item_Tail_Hand
           <xpath>/Defs/ThingDef[defName = "EVOR_Item_Tail_Blade"]/graphicData</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/XTailBlade</texPath>
+              <texPath>Things/Item/Health/TailBlade</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -2180,7 +2032,7 @@ EVOR_Item_Tail_Hand
           <xpath>/Defs/ThingDef[defName = "EVOR_Item_Tail_Blade"]</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/XTailBlade</texPath>
+              <texPath>Things/Item/Health/TailBlade</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -2210,7 +2062,7 @@ EVOR_Item_Tail_Hand
           <xpath>/Defs/ThingDef[defName = "EVOR_Item_Tail_Hand"]/graphicData</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/XTailHand</texPath>
+              <texPath>Things/Item/Health/TailHand</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>
@@ -2221,7 +2073,7 @@ EVOR_Item_Tail_Hand
           <xpath>/Defs/ThingDef[defName = "EVOR_Item_Tail_Hand"]</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/XTailHand</texPath>
+              <texPath>Things/Item/Health/TailHand</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 128, 128)</color>
               <drawSize>1.00</drawSize>

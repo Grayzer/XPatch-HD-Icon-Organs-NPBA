@@ -59,9 +59,9 @@
 +SyntheticLiver
 +SyntheticKidney
 - Bionic
-*Joywire
-*Painstopper
-*PowerArm
++Joywire
++Painstopper
++PowerArm
 +BionicHand
 +BionicFoot
 +BionicEar
@@ -105,8 +105,10 @@
 <mods>
 <li>Expanded Prosthetics and Organ Engineering</li>
 </mods>
-  <match Class="PatchOperationSequence">
-      <success>Normal</success>
+  <match Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
+    <nomatch Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/HediffDef[@Name = "addedPartAdvanced"]/defaultLabelColor</xpath>
@@ -172,11 +174,9 @@
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[@Name = "Synthetic"]/graphicData</xpath>
         </li>
-<!--
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[@ParentName = "BodyPartProstheticBase"]/graphicData</xpath>
         </li>
--->
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[@ParentName = "BodyPartBionicBase"]/graphicData</xpath>
         </li>
@@ -794,9 +794,44 @@
     </graphicData>
   </value>
 </li>
-
+<!-- PowerClaw -->
 <li Class="PatchOperationAdd">
-  <xpath>/Defs/HediffDef[defName="PowerArm" or defName="BionicHand" or defName="BionicFoot" or defName="BionicEar" or defName="BionicJaw" or defName="SilentJaw" or defName="BionicSpine" or defName="BionicEye" or defName="BionicArm" or defName="BionicLeg" or defName="MedicalRib" or defName="DruggedRib" or defName="AdrenalineRib" or defName="PainkillerRib" or defName="BionicStomach" or defName="BionicHeart"]</xpath>
+  <xpath>/Defs/ThingDef[defName = "PowerClaw"]</xpath>
+  <value>
+    <graphicData>
+      <texPath>Things/Item/Health/Claw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(51, 255, 173)</color>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+  </value>
+</li>
+<!-- Painstopper -->
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName = "Painstopper"]</xpath>
+  <value>
+    <graphicData>
+      <texPath>Things/Item/Health/Painstopper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(51, 255, 173)</color>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+  </value>
+</li>
+<!-- Joywire -->
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName = "Joywire"]</xpath>
+  <value>
+    <graphicData>
+      <texPath>Things/Item/Health/Joywire</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(51, 255, 173)</color>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+  </value>
+</li>
+<li Class="PatchOperationAdd">
+  <xpath>/Defs/HediffDef[defName="Joywire" or defName="Painstopper" or defName="PowerArm" or defName="BionicHand" or defName="BionicFoot" or defName="BionicEar" or defName="BionicJaw" or defName="SilentJaw" or defName="BionicSpine" or defName="BionicEye" or defName="BionicArm" or defName="BionicLeg" or defName="PowerClaw" or defName="MedicalRib" or defName="DruggedRib" or defName="AdrenalineRib" or defName="PainkillerRib" or defName="BionicStomach" or defName="BionicHeart"]</xpath>
   <value>
     <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
   </value>
@@ -1032,6 +1067,11 @@
   </value>
 </li>
 </operations>
+</nomatch>
+<match Class="PatchOperationTest">
+  <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
+  <success>Normal</success>
+</match>
 
 </match>
 </Operation>

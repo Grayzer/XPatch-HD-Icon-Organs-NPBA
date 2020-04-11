@@ -14,7 +14,7 @@
   Advanced Archotech    (204, 102, 0)
 -->
 
-<!-- [FSF] Advanced Bionics Expansion -->
+<!-- [FSF] Advanced Bionics Expansion Legacy Version -->
 <!--
 - Bionic
 - Implant
@@ -82,9 +82,7 @@
 <mods>
 <li>[FSF] Advanced Bionics Expansion Legacy Version</li>
 </mods>
-<match Class="PatchOperationConditional">
-  <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
-  <nomatch Class="PatchOperationSequence">
+<match Class="PatchOperationSequence">
     <success>Always</success>
     <operations>
 <!--
@@ -2084,13 +2082,8 @@
     </value>
   </nomatch>
 </li>
-</operations>
-</nomatch>
-<match Class="PatchOperationTest">
-  <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
-  <success>Normal</success>
-</match>
 
+</operations>
 </match>
 </Operation>
 </Patch>

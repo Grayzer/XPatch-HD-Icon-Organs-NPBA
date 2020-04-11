@@ -16,24 +16,30 @@
 
 <!-- Archotech Expanded -->
 <!-- Archotech -->
-<!--
-+ArchotechBrainMelder
-+ArchotechDenture
-+ArchotechHeart
-+ArchotechLung
-+ArchotechStomach
-+ArchotechLiver
-+ArchotechKidney
-+ArchotechPelvis
-+ArchotechEar
-+ArchotechSpine
-+ArchotechDeathClaw
-+ArchotechObliterator
-ArchotechMembrane
-- Advanced Archotech
-+AdvancedArchotechLeg
-+AdvancedArchotechArm
--->
+  <!-- Implant -->
+    <!--
+    +ArchotechBrainMelder
+    -->
+    <!-- Body Part -->
+    <!--
+    +ArchotechDenture
+    +ArchotechHeart
+    +ArchotechLung
+    +ArchotechStomach
+    +ArchotechLiver
+    +ArchotechKidney
+    +ArchotechPelvis
+    +ArchotechEar
+    +ArchotechSpine
+    +ArchotechDeathClaw
+    +ArchotechObliterator
+    ArchotechMembrane
+    -->
+<!-- Advanced Archotech -->
+  <!--
+  +AdvancedArchotechLeg
+  +AdvancedArchotechArm
+  -->
 
 <Operation Class="PatchOperationFindMod">
 <mods>
@@ -92,7 +98,7 @@ ArchotechMembrane
           <xpath>/Defs/ThingDef[defName = "ArchotechDenture"]/graphicData</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/Denture</texPath>
+              <texPath>Things/Item/Health/Jaw</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 204, 0)</color>
               <drawSize>1.00</drawSize>
@@ -103,7 +109,7 @@ ArchotechMembrane
           <xpath>/Defs/ThingDef[defName = "ArchotechDenture"]</xpath>
           <value>
             <graphicData>
-              <texPath>Things/Item/Health/Denture</texPath>
+              <texPath>Things/Item/Health/Jaw</texPath>
               <graphicClass>Graphic_StackCount</graphicClass>
               <color>(255, 204, 0)</color>
               <drawSize>1.00</drawSize>

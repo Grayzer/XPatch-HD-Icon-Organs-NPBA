@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- Harvest Everything! -->
+<!-- Ogliss.Ykara.HarvestEverything -->
+<!--
+Leg
+Foot
+Arm
+Hand
+Stomach
+Brain
+*Heart
+*Lung
+*Kidney
+*Liver
+Eye
+Nose
+Ear
+Jaw
+-->
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Harvest Everything!</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- Harvest Everything! -->
+<!-- Leg -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Leg"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Leg</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Foot -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Foot"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Foot</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Arm -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Arm"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Arm</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Hand -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Hand"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Hand</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Stomach -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Stomach"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Stomach</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Brain -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Brain"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/XBrain</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Heart Exist -->
+<!--
+<li Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "Heart"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Heart</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+-->
+<!-- Lung Exist -->
+<!--
+<li Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "Lung"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Lung</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+-->
+<!-- Kidney Exist -->
+<!--
+<li Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "Kidney"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Kidney</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+-->
+<!-- Liver Exist -->
+<!--
+<li Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "Liver"]/graphicData</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Liver</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+-->
+<!-- Eye -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Eye"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Eye</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Nose -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Nose"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Nose</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Ear -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Ear"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Ear</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- Jaw -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Jaw"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Jaw</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(255, 255, 255)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>
