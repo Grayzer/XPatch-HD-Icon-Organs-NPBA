@@ -74,11 +74,9 @@ AdvancedBionicEye
 <li>Rah's Bionics and Surgery Expansion - Hardcore Edition</li>
 </mods>
 
-  <match Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
-    <nomatch Class="PatchOperationSequence">
-      <success>Always</success>
-      <operations>
+<match Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
 
 <!-- Natural -->
 <!-- Stomach -->
@@ -97,6 +95,7 @@ AdvancedBionicEye
 <!-- Liver Exist -->
 <!-- Lung Exist -->
 <!-- Kidney Exist -->
+
 <li Class="PatchOperationAdd">
     <xpath>/Defs/HediffDef[defName="Stomach" or defName="Heart" or defName="Liver" or defName="Lung" or defName="Kidney"]</xpath>
     <value>
@@ -285,8 +284,8 @@ AdvancedBionicEye
       <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
     </value>
 </li>
-<li Class="PatchOperationReplace">
-    <xpath>/Defs/HediffDef[defName="Neurostimulator" or defName="Hyporegulator" or defName="Cortexaugmentor"]/defaultLabelColor</xpath>
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName="Neurostimulator" or defName="Hyporegulator" or defName="Cortexaugmentor"]</xpath>
     <value>
       <defaultLabelColor>(255, 128, 128)</defaultLabelColor>
     </value>
@@ -489,12 +488,6 @@ AdvancedBionicEye
 </li>
 
 </operations>
-
-</nomatch>
-<match Class="PatchOperationTest">
-  <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
-  <success>Normal</success>
-</match>
 
 </match>
 </Operation>

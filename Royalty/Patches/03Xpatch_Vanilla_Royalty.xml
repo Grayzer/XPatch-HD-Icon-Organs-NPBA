@@ -77,7 +77,7 @@
 <li>[FSF] Advanced Bionics Expansion</li>
 </mods>
 <nomatch Class="PatchOperationSequence">
-    <success>Always</success>
+    <success>Normal</success>
     <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/HediffDef[@Name = "ImplantHediffBase"]/defaultLabelColor</xpath>
@@ -94,6 +94,34 @@
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[@Name = "BodyPartArchotechBase"]/graphicData</xpath>
       </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[@ParentName = "BodyPartArchotechBase"]/graphicData</xpath>
+      </li>
+
+      <li Class="PatchOperationFindMod">
+        <mods>
+        <li>Rah's Bionics and Surgery Expansion</li>
+        <li>Rah's Bionics and Surgery Expansion - Hardcore Edition</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <success>Normal</success>
+          <operations>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"]/graphicData</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"]/defaultLabelColor</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"]/defaultLabelColor</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"]/defaultLabelColor</xpath>
+            </li>
+          </operations>
+        </match>
+      </li>
+
 <!-- Nature -->
 <!-- Heart -->
 <li Class="PatchOperationAdd">
@@ -761,9 +789,11 @@
   </value>
 </li>
 <!-- PsychicSilencer -->
+<!--
 <li Class="PatchOperationRemove">
   <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]/graphicData</xpath>
 </li>
+-->
 <li Class="PatchOperationAdd">
   <xpath>/Defs/ThingDef[defName = "PsychicSilencer"]</xpath>
   <value>

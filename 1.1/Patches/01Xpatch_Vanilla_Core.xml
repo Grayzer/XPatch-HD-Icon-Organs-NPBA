@@ -64,6 +64,21 @@
         <xpath>/Defs/ThingDef[@Name = "BodyPartArchotechBase"]/graphicData</xpath>
       </li>
 
+      <li Class="PatchOperationFindMod">
+        <mods>
+        <li>Rah's Bionics and Surgery Expansion</li>
+        <li>Rah's Bionics and Surgery Expansion - Hardcore Edition</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <success>Normal</success>
+          <operations>
+            <li Class="PatchOperationRemove">
+              <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"]/defaultLabelColor</xpath>
+            </li>
+          </operations>
+        </match>
+      </li>
+
 <!-- Nature -->
 <!-- Heart -->
 <li Class="PatchOperationAdd">
