@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- Color Legend -->
+<!--                    IconColor
+  Natural               (255, 255, 255)
+  Prostetic             (210, 166, 121)
+  Syntetic              (255, 128, 128)
+  Hydraulic             (51, 133, 255)
+  Bionic                (51, 255, 173)
+  Advanced Bionic       (0, 179, 60)
+  Archotech             (255, 204, 0)
+  Advanced Archotech    (204, 102, 0)
+-->
+
+<!-- CIWS Core
+- Bionic
+CIWSNamiAI  Nanobots
+CIWSFanyiJiaya  Jaws
+CIWSZhinengTui  Legs
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>CIWS_Core</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- CIWSNamiAI  Nanobots -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "CIWSNamiAI"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/AbdCultivate</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(51, 255, 173)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- CIWSFanyiJiaya  Jaws -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "CIWSFanyiJiaya"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Jaw</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(51, 255, 173)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+<!-- CIWSZhinengTui  Legs -->
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "CIWSZhinengTui"]</xpath>
+    <value>
+      <graphicData>
+        <texPath>Things/Item/Health/Leg</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <color>(51, 255, 173)</color>
+        <drawSize>1.00</drawSize>
+      </graphicData>
+    </value>
+</li>
+
+<li Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName="CIWSNamiAI" or defName="CIWSFanyiJiaya" or defName="CIWSZhinengTui"]</xpath>
+    <value>
+      <defaultLabelColor>(51, 255, 173)</defaultLabelColor>
+    </value>
+</li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>
