@@ -37,6 +37,8 @@
     <success>Normal</success>
     <operations>
 <!-- Empty -->
+
+
 <!--
       <li Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "Empty"]/graphicData</xpath>
