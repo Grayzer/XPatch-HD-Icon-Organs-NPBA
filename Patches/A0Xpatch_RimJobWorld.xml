@@ -19,6 +19,7 @@
 <Operation Class="PatchOperationFindMod">
 <mods>
 <li>RimJobWorld</li>
+<li>SafeJobWorld</li>
 </mods>
   <match Class="PatchOperationSequence">
     <success>Always</success>
