@@ -1725,6 +1725,867 @@
     </li>
     </operations>
 </Operation>
+<!-- FSFAdvBionicBrain -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicBrain"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicBrain"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XBrain</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicBrain"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicBrain"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantBrainMeleeCombat -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainMeleeCombat"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainMeleeCombat"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipMelee</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainMeleeCombat"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainMeleeCombat"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantBrainRangedCombat -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainRangedCombat"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainRangedCombat"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipShooting</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainRangedCombat"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainRangedCombat"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantBrainAnimals -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainAnimals"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainAnimals"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipTamer</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainAnimals"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainAnimals"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantBrainMedical -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainMedical"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainMedical"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipMedical</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainMedical"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainMedical"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantBrainPlants -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainPlants"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantBrainPlants"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipPlants</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainPlants"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantBrainPlants"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantTorsoWorker -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoWorker"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoWorker"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/Torso</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoWorker"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoWorker"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantTorsoSpeed -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoSpeed"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoSpeed"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XTorsoMovement</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoSpeed"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoSpeed"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantTorsoPsychic -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoPsychic"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoPsychic"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/PsiTorso</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoPsychic"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoPsychic"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFAdvBionicDrillArm -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicDrillArm"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicDrillArm"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XDrillArm</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicDrillArm"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicDrillArm"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFAdvBionicFieldArm -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicFieldArm"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicFieldArm"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/FieldHand</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicFieldArm"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicFieldArm"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFAdvBionicConstructionArm -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicConstructionArm"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFAdvBionicConstructionArm"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XConstructionArm</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicConstructionArm"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFAdvBionicConstructionArm"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantTorsoClimateControl -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoClimateControl"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoClimateControl"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/Heatsink</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoClimateControl"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoClimateControl"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFImplantTorsoRespirator -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoRespirator"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFImplantTorsoRespirator"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/Respirator</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoRespirator"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFImplantTorsoRespirator"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- AdvancedBionicFinger -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AdvancedBionicFinger"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AdvancedBionicFinger"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/Finger</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="AdvancedBionicFinger"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="AdvancedBionicFinger"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- AdvancedBionicToe -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AdvancedBionicToe"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AdvancedBionicToe"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/Toe</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="AdvancedBionicToe"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="AdvancedBionicToe"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HeaterRib -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="HeaterRib"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="HeaterRib"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XBone</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="HeaterRib"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="HeaterRib"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CoolerRib -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="CoolerRib"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CoolerRib"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XBone</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="CoolerRib"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CoolerRib"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CoagulatorRib -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="CoagulatorRib"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CoagulatorRib"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/XBone</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="CoagulatorRib"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CoagulatorRib"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
 <!-- Empty -->
 <!-- Empty -->
 <!-- Empty -->

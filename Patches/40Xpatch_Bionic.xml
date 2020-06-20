@@ -4715,6 +4715,546 @@
     </li>
     </operations>
 </Operation>
+<!-- AnimalBrainStimulator -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="AnimalBrainStimulator"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="AnimalBrainStimulator"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalBrainStimulator</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="AnimalBrainStimulator"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="AnimalBrainStimulator"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicAnimalHeart -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicAnimalHeart"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicAnimalHeart"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalHeart</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicAnimalHeart"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicAnimalHeart"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicAnimalKidney -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicAnimalKidney"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicAnimalKidney"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalKidney</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicAnimalKidney"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicAnimalKidney"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicAnimalLiver -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicAnimalLiver"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicAnimalLiver"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalLiver</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicAnimalLiver"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicAnimalLiver"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicAnimalLung -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicAnimalLung"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicAnimalLung"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalLung</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicAnimalLung"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicAnimalLung"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicAnimalStomach -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicAnimalStomach"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicAnimalStomach"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalStomach</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicAnimalStomach"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicAnimalStomach"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicArmAnimal -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicArmAnimal"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicArmAnimal"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalArm</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicArmAnimal"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicArmAnimal"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicEyeAnimal -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicEyeAnimal"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicEyeAnimal"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalEye</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicEyeAnimal"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicEyeAnimal"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- BionicLegAnimal -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BionicLegAnimal"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="BionicLegAnimal"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalLeg</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="BionicLegAnimal"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="BionicLegAnimal"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- EarAnimalBionic -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EarAnimalBionic"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="EarAnimalBionic"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalEar</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="EarAnimalBionic"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="EarAnimalBionic"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- JawAnimalBionic -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="JawAnimalBionic"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="JawAnimalBionic"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalJaw</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="JawAnimalBionic"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="JawAnimalBionic"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- SpineAnimalBionic -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="SpineAnimalBionic"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="SpineAnimalBionic"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/AnimalSpine</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(51, 255, 173)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="SpineAnimalBionic"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="SpineAnimalBionic"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(51, 255, 173)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
 <!-- Empty -->
 <!-- Empty -->
 <!-- Empty -->

@@ -3165,6 +3165,46 @@
     </li>
     </operations>
 </Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="MuscleStimulatorArms"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="MuscleStimulatorArms"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="MuscleStimulatorLegs"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="MuscleStimulatorLegs"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
 <!-- PsychicAmplifier -->
 <Operation Class="PatchOperationSequence">
   <success>Always</success>
@@ -3435,6 +3475,327 @@
     </li>
     </operations>
 </Operation>
+<!-- FSFArchotechSkinI -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFArchotechSkinI"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFArchotechSkinI"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/SkinPlating</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFArchotechSkinI"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFArchotechSkinI"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- FSFArchotechPowerCore -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="FSFArchotechPowerCore"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="FSFArchotechPowerCore"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/Battary</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="FSFArchotechPowerCore"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="FSFArchotechPowerCore"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- EPOE_ScytherBlade -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EPOE_ScytherBlade"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="EPOE_ScytherBlade"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ScytherBlade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="EPOE_ScytherBlade"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="EPOE_ScytherBlade"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- EPIA_ProtectiveExoskeleton -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EPIA_ProtectiveExoskeleton"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="EPIA_ProtectiveExoskeleton"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ExoskeletonSuit</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="EPIA_ProtectiveExoskeleton"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="EPIA_ProtectiveExoskeleton"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- EPIA_AuxiliaryAI_Sharpshooter -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EPIA_AuxiliaryAI_Sharpshooter"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="EPIA_AuxiliaryAI_Sharpshooter"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipShooting</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="EPIA_AuxiliaryAI_Sharpshooter"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="EPIA_AuxiliaryAI_Sharpshooter"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- EPIA_AuxiliaryAI_Brawler -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EPIA_AuxiliaryAI_Brawler"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="EPIA_AuxiliaryAI_Brawler"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipMelee</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="EPIA_AuxiliaryAI_Brawler"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="EPIA_AuxiliaryAI_Brawler"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- EPIA_AuxiliaryAI_Commando -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EPIA_AuxiliaryAI_Commando"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="EPIA_AuxiliaryAI_Commando"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/ChipTamer</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(255, 204, 0)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[defName="EPIA_AuxiliaryAI_Commando"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="EPIA_AuxiliaryAI_Commando"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(255, 204, 0)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
+<!-- Empty -->
 <!-- Empty -->
 <!-- Empty -->
 <!-- Empty -->
