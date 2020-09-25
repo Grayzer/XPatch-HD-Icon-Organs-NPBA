@@ -20,3 +20,4 @@ Support mods:
 + CIWS_Core
 + The Birds and the Bees
 + A Dog Said... Animal Prosthetics 
++ Cybernetic Organism and Neural Network
