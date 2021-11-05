@@ -2920,7 +2920,186 @@
     </li>
     </operations>
 </Operation>
-<!-- Empty -->
+<!-- CFSimpleAniPaw -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniPaw"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniPaw"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/cfAniPaw</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(210, 166, 121)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniPawHed"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniPawHed"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(210, 166, 121)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CFSimpleAniSpine -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniSpine"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniSpine"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/cfAniSpine</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(210, 166, 121)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniSpineHed"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniSpineHed"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(210, 166, 121)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CFSimpleAniEye -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniEye"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniEye"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/cfAniEye</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(210, 166, 121)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniEyeHed"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniEyeHed"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(210, 166, 121)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CFSimpleAniJaw -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniJaw"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CFSimpleAniJaw"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/cfAniJaw</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(210, 166, 121)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniJawHed"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CFSimpleAniJawHed"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(210, 166, 121)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
 <!-- Empty -->
 <!-- Empty -->
 
