@@ -21,3 +21,4 @@ Support mods:
 + The Birds and the Bees
 + A Dog Said... Animal Prosthetics 
 + Cybernetic Organism and Neural Network
++ Cyber Fauna
