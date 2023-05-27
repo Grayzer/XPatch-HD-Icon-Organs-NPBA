@@ -4,14 +4,14 @@
 <!-- ===xpath=== -->
 <!-- Color Legend -->
 <!--                    IconColor
-  Natural               (255, 255, 255)
-  Prostetic             (210, 166, 121)
-  Syntetic              (255, 128, 128)
-  Hydraulic             (51, 133, 255)
-  Bionic                (51, 255, 173)
-  Advanced Bionic       (0, 179, 60)
-  Archotech             (255, 204, 0)
-  Advanced Archotech    (204, 102, 0)
+  Natural               rgb(255, 255, 255)
+  Prostetic             rgb(210, 166, 121)
+  Syntetic              rgb(255, 128, 128)
+  Hydraulic             rgb(51, 133, 255)
+  Bionic                rgb(51, 255, 173)
+  Advanced Bionic       rgb(0, 179, 60)
+  Archotech             rgb(255, 204, 0)
+  Advanced Archotech    rgb(204, 102, 0)
 -->
 
 <!-- Advanced Bionic -->
@@ -4290,7 +4290,591 @@
     </li>
     </operations>
 </Operation>
-<!-- Empty -->
-<!-- Empty -->
+<!-- CONN_EnergeticLung -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergeticLung"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergeticLung"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechEnergeticLung</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergeticLung"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergeticLung"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_EnergeticKidney -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergeticKidney"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergeticKidney"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechEnergeticKidney</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergeticKidney"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergeticKidney"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_EnergyCore -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergyCore"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergyCore"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechEnergyCore</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergyCore"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergyCore"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_Autonomicviruskiller -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_Autonomicviruskiller"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_Autonomicviruskiller"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechAutonomicviruskiller</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Autonomicviruskiller"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Autonomicviruskiller"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_Aurum -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_Aurum"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_Aurum"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechAurum</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Aurum"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Aurum"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_IndependentEye -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_IndependentEye"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_IndependentEye"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechIndependentEye</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_IndependentEye"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_IndependentEye"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_EnergyLink -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergyLink"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_EnergyLink"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechEnergyLink</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergyLink"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_EnergyLink"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_OuterBlade -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_OuterBlade"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_OuterBlade"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechOuterBlade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_OuterBlade"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_OuterBlade"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_PowerArms -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_PowerArms"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_PowerArms"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechPowerArms</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_PowerArms"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_PowerArms"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_Shadowrunner -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_Shadowrunner"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_Shadowrunner"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechShadowrunner</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Shadowrunner"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Shadowrunner"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_Exoskeleton -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_Exoskeleton"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_Exoskeleton"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechExoskeletonArmor</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_ExoskeletonArmor"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_ExoskeletonArmor"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_Dermalplating -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_Dermalplating"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_Dermalplating"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechDermalplating</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Dermalplating"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Dermalplating"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- CONN_Lionheart -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/ThingDef[defName="CONN_Lionheart"]/graphicData</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="CONN_Lionheart"]</xpath>
+      <value>
+        <graphicData Inherit="False">
+          <texPath>Things/Item/Health/CyberTechLionheart</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+          <color>(0, 179, 60)</color>
+          <drawSize>1.00</drawSize>
+        </graphicData>
+      </value>
+    </li>
+    </operations>
+</Operation>
+<!-- HediffDef -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationRemove">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Lionheart"]/defaultLabelColor</xpath>
+    </li>
+  </operations>
+</Operation>
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="CONN_hediff_Lionheart"]</xpath>
+      <value>
+        <defaultLabelColor Inherit="False">(0, 179, 60)</defaultLabelColor>
+      </value>
+    </li>
+    </operations>
+</Operation>
+
 
 </Patch>

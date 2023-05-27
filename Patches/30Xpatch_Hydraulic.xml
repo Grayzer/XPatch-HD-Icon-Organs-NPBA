@@ -4,14 +4,14 @@
 <!-- ===xpath=== -->
 <!-- Color Legend -->
 <!--                    IconColor
-  Natural               (255, 255, 255)
-  Prostetic             (210, 166, 121)
-  Syntetic              (255, 128, 128)
-  Hydraulic             (51, 133, 255)
-  Bionic                (51, 255, 173)
-  Advanced Bionic       (0, 179, 60)
-  Archotech             (255, 204, 0)
-  Advanced Archotech    (204, 102, 0)
+  Natural               rgb(255, 255, 255)
+  Prostetic             rgb(210, 166, 121)
+  Syntetic              rgb(255, 128, 128)
+  Hydraulic             rgb(51, 133, 255)
+  Bionic                rgb(51, 255, 173)
+  Advanced Bionic       rgb(0, 179, 60)
+  Archotech             rgb(255, 204, 0)
+  Advanced Archotech    rgb(204, 102, 0)
 -->
 
 <!-- Hydraulic -->
